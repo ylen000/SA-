@@ -1,0 +1,316 @@
+
+
+/*其他*/
+.category {
+    clear: both;
+   
+}
+
+.category>h2 {
+    margin-bottom: 50px;
+    font-size: 28px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.productrange {
+    padding: 0;
+    float: left;
+    margin: 0 17% 50px 17%;
+    width: 70%;
+}
+
+.sealing,
+.tool {
+    margin: 0 5% 50px 5%;
+    float: left;
+    width: 90%;
+}
+
+.produce {
+    border: 1px solid hsl(36, 46%, 68%, 0.5);
+    background-color: #FFFFFF;
+    margin: 0 20px;
+    padding: 22px;
+    border-radius: 10px;
+    float: left;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.produce:hover {
+    background-color: #d3b589;
+    transition: 0.35s;
+}
+
+.produce>div {
+    line-height: 40px;
+    margin: 20px 0;
+    height: 100px;
+}
+
+p>span {
+    color: #ce1613;
+}
+
+.productrange>a,
+.sealing>a,
+.tool>a {
+    color: black;
+    text-decoration: none;
+}
+
+.produce>img {
+    width: 100%;
+    border-radius: 6px;
+    border: 0.5px solid #ededec;
+}
+
+@media screen and (max-width:800px) {
+
+    /*輪播圖*/
+    .slider {
+        margin: 0 5%;
+        width: 90%;
+        height: 300px;
+    }
+
+    .slides {
+        width: 500%;
+        height: 300px;
+    }
+
+    .slide img {
+        height: 300px;
+    }
+
+    .manual {
+        width: 75%;
+        margin-top: -30px;
+    }
+
+    .manual-radio,
+    .auto div {
+        height: 17px;
+        width: 17px;
+        border: 2px solid #f1e1c3;
+    }
+
+    .manual-radio:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    .auto {
+        width: 75%;
+        margin-top: 270px;
+    }
+
+    .auto div:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    /**/
+    .category>h2 {
+        margin-bottom: 30px;
+        font-size: 24px;
+        padding: 20px 0;
+    }
+
+    .productrange {
+        float: left;
+        padding: 0;
+        margin: 0 5%;
+        width: 90%;
+    }
+
+    .sealing {
+        float: left;
+        padding: 0;
+        margin: 0 5%;
+        width: 90%;
+    }
+
+    .tool {
+        float: left;
+        padding: 0;
+        margin: 0 5%;
+        width: 90%;
+    }
+
+    .produce {
+        height: 400px;
+        margin: 0 2.5% 40px;
+        padding: 18px;
+        float: left;
+        width: 280px;
+        font-size: 20px;
+    }
+
+    .produce>div {
+        line-height: 30px;
+        margin: 15px 0;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    /*輪播圖*/
+    .slider {
+        width: 95%;
+        height: 270px;
+    }
+
+    .slides {
+        width: 500%;
+        height: 270px;
+    }
+
+    .slide img {
+        height: 270px;
+    }
+
+    .manual {
+        width: 80%;
+        margin-top: -30px;
+    }
+
+    .manual-radio,
+    .auto div {
+        height: 10px;
+        width: 10px;
+        border: 2px solid #f1e1c3;
+    }
+
+    .manual-radio:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    .auto {
+        width: 80%;
+        margin-top: 240px;
+    }
+
+    .auto div:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    .category>h2 {
+        margin-bottom: 30px;
+        font-size: 22px;
+        padding: 20px 0;
+    }
+
+    .productrange {
+        padding: 0;
+        float: left;
+        padding: 0 20%;
+        margin: 0;
+        width: 100%;
+    }
+
+    .sealing,
+    .tool {
+        float: left;
+        padding: 0 20%;
+        margin: 0;
+        width: 100%;
+    }
+
+    .produce {
+        margin: 0 8% 30px 8%;
+        padding: 18px;
+        float: left;
+        width: 250px;
+        font-size: 18px;
+    }
+
+    .produce>div {
+        line-height: 30px;
+        margin: 15px 0;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width:499px) {
+
+    /*輪播圖*/
+    .slider {
+        margin: 0 1.5%;
+        width: 97%;
+        height: 180px;
+    }
+
+    .slides {
+        width: 500%;
+        height: 180px;
+    }
+
+    .slide img {
+        height: 180px;
+    }
+
+    .manual {
+        margin-top: -30px;
+    }
+
+    .manual-radio,
+    .auto div {
+        height: 10px;
+        width: 10px;
+        border: 2px solid #f1e1c3;
+    }
+
+    .manual-radio:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    .auto {
+        margin-top: 150px;
+    }
+
+    .auto div:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    /*其他*/
+    .category>h2 {
+        margin-bottom: 30px;
+        font-size: 22px;
+        padding: 20px 0;
+    }
+
+    .productrange {
+        padding: 0;
+        float: left;
+        margin: 0 10%;
+        width: 90%;
+    }
+
+    .sealing,
+    .tool {
+        padding: 0;
+        float: left;
+        margin: 0 10%;
+        width: 90%;
+    }
+
+    .produce {
+        height: 360px;
+        margin: 0 8% 30px 8%;
+        padding: 18px;
+        float: left;
+        width: 250px;
+        font-size: 18px;
+    }
+
+    .produce>div {
+        line-height: 30px;
+        margin: 15px 0;
+        height: 80px;
+    }
+
+}
