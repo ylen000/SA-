@@ -1,5 +1,5 @@
 body{
-    background-image: url(image/earth2.jpg);
+    background-image: url(../image/earth2.jpg);
     background-size:cover;
     font-weight: bold;
     background-position: center;
@@ -38,40 +38,13 @@ article{
     margin: 20%;
     margin-top: 5%;
 }
-.signtit1{
-    text-align: center;
-    font-size:35px;
-    animation: chage 3s ;
-    color: rgb(0, 0, 0);
-    margin-top: 1%;
-}
-.signintit{
-    text-align: center;
-    font-size: 40px;
-    animation: chage1 3s ;
-    color: rgb(0, 0, 0);
-    margin-top: 0%;
-    padding: 5%;
-    border-bottom: black solid;
-    padding-bottom: 3%;
-    margin-bottom: 2%;
-}
-@keyframes chage1{
-    0%{color: rgba(240, 248, 255, 0);}
-    50%{color: rgba(240, 248, 255, 0);}
-    100%{color: rgb(0, 0, 0);}
-}
-@keyframes chage{
-    0%{color: rgba(240, 248, 255, 0);}
-    100%{color: rgb(0, 0, 0);}
-}
-
-.signinbody
+.body
 {
     width: auto; 
     background-color: rgba(44, 122, 49, 0.562);
     border-radius: 10px;
     padding: 10%;
+    text-align: center;
     
 }
 .sign
@@ -101,8 +74,9 @@ button{
 button:hover{
     background-color: rgba(84, 84, 84, 0.502);
 }
-.signbg{
+.body2{
     background-color: rgba(255, 255, 255, 0.53);
+    padding-top: 10%;
     border-radius: 10px;
 }
 .problem{
@@ -129,17 +103,19 @@ button:hover{
         margin-top: 10%;
         padding-top: 5%;
     }
-    .signintit{
-        font-size: 30px;
-
-    }
-    .signtit1{
-        font-size: 35px;
-        
-    }
     .problem{
         width: 8%;
         padding: 2%;
+    }
+    .body{
+        margin-top: 15%;
+    }
+    .userphoto{
+        margin-top:10% ;
+    }
+    #rimg{
+        margin-bottom: 30%;
+        margin-top: 10%;
     }
 }
 

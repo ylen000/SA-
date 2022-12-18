@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>兌換商品</title>
+    <link rel="stylesheet" href="../asset/css/common.css">
+    <link rel="stylesheet" href="../asset/css/product.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="../asset/js/product.js"></script>
+
+</head>
+
+<body>
+    <div class="body">
+        <a href="" id="top"><b>&#8593;</b></a>
+        <header class="mean">
+            <div class="title_logo">
+                <a href=""><img src="../asset/image/back-button.png"></a>
+            </div>
+            <div class="meannav">
+                <div class="meannav_a">
+                    <a class="meannav_a_first" href="">關於碳治郎</a>
+                    <a href="member.html">會員中心</a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <article>
+                <!--圖片-->
+                <section class="photo">
+                    <div class="photobig" id="big_photo">
+                        <img src="../asset/image/produce_love.png">
+                    </div>
+                    <div class="photosmall">
+                        <a herf onclick="myFunction01()">
+                            <img src="../asset/image/produce_love.png">
+                        </a>
+                    </div>
+                </section>
+                <!--商品名稱價錢-->
+                <article class="product_text">
+                    <h1>瑪莎拉蒂</h1>
+                    <div class="product_text_price"><img src="../asset/image/money.png" width="50px" style="padding-right: 20px;">250點</div>
+                    <form>
+                        <div class="product_text_number">數量：<input type="number" min="1" value="1"></div>
+                        <div class="product_text_buy"><input type="submit" value="兌換"></div>
+                    </form>
+                    <div class="product_text_detail">
+                        <h4>商品介紹</h4>
+                        <hr>
+                        <p>章頭尺寸：直徑2.5公分</p>
+                        <p>章頭高度：1.5公分</p>
+                        <p>章頭重量：約30公克</p>
+                        <p>木柄高度：7.4公分</p>
+                    </div>
+                </article>
+                <div class="problem">
+                    <a href=""><img style="width: 100%;" src="../asset/image/customer-service.png"></a>
+                </div>
+            </article>
+            <script src="../asset/js/common.js"></script>
+        </main>
+        <footer>
+            <p></p>
+        </footer>
+    </div>
+</body>
+
+</html>
