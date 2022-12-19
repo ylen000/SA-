@@ -30,7 +30,7 @@
 .order1>h3 {
     text-align: center;
     font-size: 32px;
-    padding: 20px 0;
+    padding: 10px 0;
     margin: 0;
 }
 
@@ -505,17 +505,18 @@ h5 {
 
 @media screen and (max-width:499px) {
     .signin {
-        margin: 140px 5% 0px 5%;
+        margin: 140px 0 0 0;
     }
 
     .order>h2,
     .signin>h2 {
         font-size: 28px;
-        padding: 20px 0 15px 20px;
+        padding: 10px 0 15px 20px;
     }
+    
 
     .form {
-        height: 720px;
+        height: 520px;
         padding: 20px 30px;
     }
 
@@ -570,8 +571,9 @@ h5 {
     }
 
     .order {
-        margin: 120px 5% 500px;
+        margin: 120px 5% 530px;
     }
+    
 
     table {
         margin: 0;
