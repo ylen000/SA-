@@ -283,7 +283,7 @@ h5 {
 
     .form {
         height: auto;
-        padding: 20px 30px 120px;
+        padding: 20px 30px 20px;
     }
 
     .left {
@@ -340,7 +340,7 @@ h5 {
     }
 
     .order {
-        margin: 140px 10% 160px;
+        margin: 140px 10% 160px 0px;
     }
 
     table {
@@ -570,7 +570,7 @@ h5 {
     }
 
     .order {
-        margin: 120px 5% 164px;
+        margin: 120px 5% 500px;
     }
 
     table {
