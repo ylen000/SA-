@@ -24,7 +24,7 @@
     font-weight: bold;
     background-position: center;
     background-attachment: fixed;
-    
+
 }
 
 main::after {
@@ -44,7 +44,7 @@ footer {
 
 .mean {
     width: 100%;
-    background-color: #6cc564;
+  
     text-align: center;
     height: 100px;
 }
@@ -266,6 +266,113 @@ footer {
     background-color: #9f7855;
 }
 
+@media screen and (min-width:1280px) {
+   
+
+
+    .meannav_a_product_list {
+        font-size: 18px;
+        padding: 32px 12px;
+    }
+
+    .product_list {
+    
+        font-size: 18px;
+    }
+
+    .list {
+        font-size: 16px;
+        text-indent: 3px;
+        padding: 0 1px;
+    }
+
+    .meannav_a>a {
+        font-size: 18px;
+        padding: 32px 12px;
+    }
+
+    .meannav_a_last {
+        font-size: 16px;
+    }
+
+    .meannav_a_first>div {
+        font-size: 14px;
+        line-height: 14px;
+        width: 70px;
+    }
+
+    /**search*/
+    .search {
+        float: right;
+        height: 90px;
+        margin: 0;
+        width: 21%;
+        padding: 32px 0;
+    }
+
+    .search_img {
+        margin: 2px 1px 0 0;
+        width: 20%;
+    }
+
+    .search_text {
+        width: 73px;
+    }
+
+    .search_text>input {
+        margin: 2px 0 0 1%;
+        font-size: 16px;
+        padding: 2px 4px;
+    }
+
+    .search_button {
+        margin-left: 2%;
+        float: left;
+        width: 15%;
+    }
+
+    .search_button>input {
+        width: 40px;
+        margin: 2px 0 0 1%;
+        font-size: 14px;
+        padding: 2px;
+    }
+
+    /*shoppingcart longin*/
+    .title_sign {
+        position: absolute;
+        right: 0;
+        top: 0px;
+        clear: both;
+        float: right;
+        padding: 1px 5px 2px 5px;
+        width: 10%;
+    }
+
+    .buycaricon>img {
+        margin: 1px;
+        padding: 0;
+        float: right;
+        height: 51%;
+    }
+
+    .loginicon>img {
+        margin: 0px 10px 0px 0px;
+        float: right;
+        height: 47%;
+    }
+
+    #top {
+        width: 45px;
+        height: 45px;
+        font-size: 16px;
+        padding: 10px;
+    }
+    footer{
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width:800px) {
     .title_logo {
         height: 20px;
@@ -281,7 +388,7 @@ footer {
 
     .meannav {
         height: 90px;
-        background-color: #6cc564;
+     
         clear: both;
         width: 100%;
     }
@@ -399,8 +506,7 @@ footer {
         font-size: 16px;
     }
 }
-
-@media screen and (max-width:700px) {
+@media screen and (max-width:600px) {
     .title_logo {
         height: 80px;
         margin-left: 5%;
@@ -416,9 +522,13 @@ footer {
     .mean {
         height: 80px;
     }
+    .problem{
+        width: 8%;
+        padding: 2%;
+    }
 
     .meannav {
-        background-color: #6cc564;
+    
         height: 80px;
         clear: both;
         width: 100%;
@@ -558,7 +668,7 @@ footer {
     }
 
     .meannav {
-        background-color: #6cc564;
+ 
         height: 80px;
         clear: both;
         width: 100%;
