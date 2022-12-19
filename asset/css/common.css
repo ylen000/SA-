@@ -3,6 +3,31 @@
     margin: 0px;
     padding: 0px;
 }
+.heading{
+    
+    font-size: 18px;
+    padding: 1%;
+    font-weight: bolder;
+    
+}
+.mem
+{
+    float: right;
+    margin: 2%;
+    margin-right: 5%;
+    color: black;
+    text-decoration: none;
+}
+.mem:hover{
+    color: white;
+}
+.previous
+{
+    margin: 10px;
+    margin-right: 30px;
+    width: 50px;
+    float: left;
+}
 .problem{
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
