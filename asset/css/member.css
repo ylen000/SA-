@@ -1,7 +1,7 @@
 .signin {
     background-color: #FFFFFF;
     border-radius: 10px;
-    margin: 74px 25%;
+    margin: 74px 25% 0 25%;
 }
 
 .order>h2,
@@ -30,7 +30,7 @@
 .order1>h3 {
     text-align: center;
     font-size: 32px;
-    padding: 10px 0;
+    padding: 20px 0;
     margin: 0;
 }
 
@@ -505,7 +505,7 @@ h5 {
 
 @media screen and (max-width:499px) {
     .signin {
-        margin: 140px 0 0 0;
+        margin: 120px 15px 30px 15px;
     }
 
     .order>h2,
@@ -517,7 +517,7 @@ h5 {
 
     .form {
         height: 520px;
-        padding: 20px 30px;
+        padding: 20px 20px;
     }
 
     .right {
@@ -571,9 +571,11 @@ h5 {
     }
 
     .order {
-        margin: 120px 5% 530px;
+        margin: 120px 10px 30px 10px;
     }
-    
+    .order1 {
+        margin: 20px 10px 0px 10px ;
+    }
 
     table {
         margin: 0;

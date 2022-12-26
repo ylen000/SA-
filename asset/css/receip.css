@@ -26,6 +26,7 @@ body{
 }
 p{
     margin: 0px;
+    font-size: 16pt;
 }
 .previous
 {
@@ -79,6 +80,14 @@ button:hover{
     padding-top: 10%;
     border-radius: 10px;
 }
+.userphoto img{
+    border: solid black;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(246, 246, 246, 0.795);
+    padding: 0.5%;
+}
 .problem{
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
@@ -118,4 +127,3 @@ button:hover{
         margin-top: 10%;
     }
 }
-
