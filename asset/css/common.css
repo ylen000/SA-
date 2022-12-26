@@ -32,7 +32,7 @@
     background-color: rgb(255, 255, 255);
     border-radius: 50%;
     padding: 1%;
-    width: 3%;
+    width: 4%;
     text-align: center;
     position: fixed;
     bottom: 5%;
@@ -40,10 +40,10 @@
     transition-duration: 1s;
 }
 .problem:hover{
-    width: 4%;
+    width: 5%;
     transition-duration: 1s;
 }
-.body {
+body {
     background-image: url(../image/earth2.jpg);
     background-size:cover;
     font-weight: bold;
@@ -530,6 +530,10 @@ footer {
     footer{
         font-size: 16px;
     }
+    .problem{
+        width: 12%;
+        padding: 2%;
+    }
 }
 @media screen and (max-width:600px) {
     .title_logo {
@@ -673,6 +677,10 @@ footer {
         font-size: 14px;
         padding: 9.5px;
     }
+    .problem{
+        width: 12%;
+        padding: 2%;
+    }
 }
 
 @media screen and (max-width:499px) {
@@ -814,5 +822,9 @@ footer {
         font-size: 18px;
         padding: 8px;
         bottom: 9px;
+    }
+    .problem{
+        width: 12%;
+        padding: 2%;
     }
 }
