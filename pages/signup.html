@@ -12,10 +12,10 @@
 <body>
     <header class="heading">
         <div>
-            <a href=""><img class="previous" src="../asset/image/previous.png"></a>
+            <a href="index.html"><img class="previous" src="../asset/image/home-icon-silhouette.png"></a>
         </div>
         <div>
-            <a class="mem" href="">會員中心</a>
+            <a class="mem" href="member.html">會員中心</a>
         </div>
     </header>
     <article>
@@ -23,18 +23,20 @@
             <p>WELCOME</p>
         </div>
         <div class="signintit">
-            <p>Sign up</p>
+            <p>註冊</p>
         </div>
         <div class="signinbody">
             <div class="signbg">
-                <form id="signin">
+                <form id="signin" action="">
                     <div class="sign">
                         <br>
-                        使用者名稱:&nbsp;<input><br><br><br>
-                        真實姓名:&nbsp;<input><br><br><br>
-                        身分證字號:&nbsp;<input><br><br><br>
-                        手機號碼:&nbsp;<input><br><br><br>
-                        <button type="submit">註冊</button><br><br>
+                        使用者名稱:<br>&nbsp;<input name="username"><br><br><br>
+                        手機號碼:<br>&nbsp;<input name="phone"><br><br><br>
+                        密碼:<br>&nbsp;<input name="password"><br><br><br>                      
+                       <button type="submit">註冊</button><br><br>
+                       <div style="font-size: 12pt;">
+                            <input style="width: 10%;" type="checkbox">您已閱讀、了解並同意接受<a href="terms.html">本服務條款</a>之所有內容<br>
+                       </div>
                     </div>
                 </form>
             </div>
