@@ -1,0 +1,130 @@
+.Slideshow-container {
+    width: 100%;
+    position: relative;
+    top: 100px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .Slides {
+    display:none;
+    text-align: center;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    background-color: rgb(108, 244, 119);
+  }
+
+  .prev{
+    left: 0;
+    border-radius: 3px 0 0 3px;
+    background-color: rgb(108, 244, 119);
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(78, 74, 74, 0.8);
+  }
+  .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    position: relative;
+    top: 100px;
+  }
+  .active, .dot:hover {
+    background-color: #717171;
+  }  
+
+
+  #product
+{
+  font-weight: bold;
+  color: rgb(252, 252, 252);
+  font-size: 15pt;
+  margin: 0;
+  text-align: center;
+}
+
+.product
+{
+  
+  position: relative;
+  top: 100px;
+  text-align: center;
+  width: 100%;
+  border:none;
+  padding: 20px;
+  height: auto;
+  margin-bottom: 50px;
+  line-height: 50px;
+}
+
+.tdp
+{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+ski{
+    font-family:'t2';
+    font-size: 25px;
+    color: #000000;
+    text-align: center;
+    padding-top: 10px;
+  }
+  
+  ski span{
+    transition: 0.5s;   /* 字間距變大S的時間 */
+  }
+  
+  ski:hover span {
+      color: #000000;
+      text-shadow: -2px 2px 0 #fab5d7, 2px 2px 0 	#fab5d7,2px -2px 0 	#fab5d7,-2px -2px 0 #fab5d7,
+      0 0 20px white,
+      0 0 40px white,
+      0 0 80px white;
+  }
+
+  .hotproimg
+{
+  width: 300px; 
+  height: 400px;
+  padding-left: 20px;
+}
+
+td
+{
+  border: none;
+  background-color: rgb(108, 244, 119);
+  border-radius:10px
+}
+
+
+
+
+
+
+

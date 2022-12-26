@@ -1,0 +1,57 @@
+@font-face {
+    font-family: t1;
+   src: url(./Noto_Serif_TC/NotoSerifTC-Black.otf)}
+
+.title{
+    text-align: center;
+    font-size: 150px;
+    font-weight: bolder;
+    margin-top: 80px;
+    color: rgb(38, 190, 71);
+    -webkit-text-stroke: 3px rgb(255, 255, 255);
+    font-family: "t1";
+    letter-spacing:50px;
+}
+
+.funtion {
+    margin: 0 10% 50px 10%;
+    float: left;
+    width: 90%;
+}
+
+.ff {
+    border: 3px solid rgb(13, 155, 22);
+    background-color: #FFFFFF;
+    margin: 50px 100px;
+    padding: 10px;
+    border-radius: 100px;
+    float: left;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.ff:hover {
+    background-color: #99d389;
+    transition: 0.35s;
+}
+
+.ff>div {
+    line-height: 40px;
+    margin: 30px 0;
+    height: 100px;
+}
+
+p>span {
+    color: #ce1613;
+}
+
+.productrange>a,
+.sealing>a,
+.funtion>a {
+    color: black;
+    text-decoration: none;
+}
+
