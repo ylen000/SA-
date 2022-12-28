@@ -27,16 +27,21 @@
         </div>
         <div class="signinbody">
             <div class="signbg">
-                <form id="signin">
+                
+                <form action="/login/" method='post' id="signin" >
                     <div class="sign">
                         <br>
-                        手機:&nbsp;<input><br><br><br>
-                        密碼:&nbsp;<input><br><br>
+                    {% csrf_token %}
+                        手機:&nbsp;<input name='uName'><br><br><br>
+                        密碼:&nbsp;<input type='uPass' name='psw'><br><br>
                         <button type="submit">登入</button><br><br>
+                    
                         <a href="http://127.0.0.1:8000/signup"><button type="button">註冊</button></a><br><br>
                         <a style="color: black;" href="">Forget password?</a>
+                    
                     </div>
                 </form>
+                
             </div>
             
         </div>
