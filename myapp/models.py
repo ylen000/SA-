@@ -12,3 +12,5 @@ class userdata(models.Model):
 
 
 
+class QA(models.Model):
+        QUESTIONS = models.CharField('問題回報',max_length=500,blank = False,null=False)

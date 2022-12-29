@@ -32,26 +32,29 @@
         </div>-->
         <div class="signinbody">
             <div class="signbg">
-                <form id="signin">
+                {% block main %}
+                <form id="QA" action="/QA/" method='post'>
                     <div class="sign">
+                        {% csrf_token %}
                         <div class="" style="width: 100%;"><h1><b>問題回報</b></h1><hr><br></div>
                         <!--<input style="display: flex;" value="請輸入標題"><br>-->
-                        <textarea id="w3review" name="w3review"  rows="5" cols="40" style="width: 100%; " required >
+                        <textarea id="TXT" name="TXT"  rows="5" cols="40" style="width: 100%; " required >
                            
                             </textarea><br><br>
-                            <button type="button" style="display: inline-block;width: auto; font-size: large;" >送出</button> <button type="button" style="display: inline; width: auto;font-size: large;">取消</button>
+                            <button type="submit" style="display: inline-block;width: auto; font-size: large;" >送出</button> <button type="button" style="display: inline; width: auto;font-size: large;">取消</button>
                         <!--<button type="submit">登入</button><br><br>
                         <a href="signup.html"><button type="button">註冊</button></a><br><br>
                         <a style="color: black;" href="">Forget password?</a>-->
                     </div>
                 </form>
+                {% endblock %}
             </div>
             
         </div>
     </article>
    
     <div class="problem">
-        <a href="QA.html"><img style="width: 100%;" src="../static/images/customer-service.png"></a>
+        <a href="http://127.0.0.1:8000/QA"><img style="width: 100%;" src="../static/images/customer-service.png"></a>
     </div>
 </body>
 </html>

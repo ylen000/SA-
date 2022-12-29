@@ -18,13 +18,16 @@ from django.urls import path
 from myapp import views
 
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.signin),
     path('signup',views.signup),
     path('login/',views.login),
+    path('login/index',views.home),
+    path('login/signin', views.signin),
     path('QA',views.QA, name='greet'),
-    #path('hi/<username>/', views.hiname),      # 傳遞字串參數 username
+    #path('hi/<username>/', views.hinampath('myweb/', include('myweb.urls'))e),      # 傳遞字串參數 username
     #path('age/<int:year>/', views.age),        # 傳遞數值參數 year
     #path('hello/', views.hello_view),
     # path(r'^admin/', admin.site.urls),
