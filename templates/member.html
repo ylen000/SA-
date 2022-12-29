@@ -24,28 +24,36 @@
             <section class="signin">
                 <h2>會員資料</h2>
                 <hr>
-                <form class="form" method="post">
-                    <div class="signin_form_ID">
-                        <div class="signin_form_text">
-                            會員帳號：
-                        </div>
-                        <input type="email" name="MEMID" value="123@gmail.com" disabled><br>
-                    </div>
+                <form class="form" method="get">
+                    {% csrf_token %}
+                    {{form}}
                     <div class="left">
+                        <div class="signin_form">
+                            <div class="signin_form_text">
+                                會員帳號：<br>
+                            </div>
+                            <input type="tel" name="username" value="{{ userphone }}" required><br>
+                        </div>
                         <div class="signin_form">
                             <div class="signin_form_text">
                                 會員名稱：<br>
 
+
                             </div>
-                            <input type="text" name="NAME" value="小可愛" required><br>
+                            <input type="text" name="myname" value="{{ username }}" required><br>
                         </div>
                         <div class="signin_form">
                             <div class="signin_form_text">
-                                電　　話：<br>
-
+                                等級：<br>
                             </div>
-                            <input type="tel" name="PHONE" value="0911111111" required><br>
+                            <input type="memlevel" name="mylevel" required><br>
                         </div>
+                    </div>
+                    <div class="signin_form_address">
+                        <div class="signin_form_text">
+                            點數：{{ request.user.POINT }}
+                        </div>
+                        <input type="text" name="mypoint"  ><br>
                     </div>
                 </form>
             </section>
