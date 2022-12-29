@@ -4,11 +4,11 @@
     padding: 0px;
 }
 .heading{
-    
+
     font-size: 18px;
     padding: 1%;
     font-weight: bolder;
-    
+
 }
 .mem
 {
@@ -44,7 +44,7 @@
     transition-duration: 1s;
 }
 body {
-    background-image: url(../image/earth2.jpg);
+    background-image: url(../images/earth2.jpg);
     background-size:cover;
     font-weight: bold;
     background-position: center;
@@ -59,8 +59,8 @@ main::after {
 }
 
 footer {
-   
-  
+
+
     text-align: center;
     padding: 25px;
     width: 100%;
@@ -69,7 +69,7 @@ footer {
 
 .mean {
     width: 100%;
-  
+
     text-align: center;
     height: 100px;
 }
@@ -292,7 +292,7 @@ footer {
 }
 
 @media screen and (min-width:1280px) {
-   
+
 
 
     .meannav_a_product_list {
@@ -301,7 +301,7 @@ footer {
     }
 
     .product_list {
-    
+
         font-size: 18px;
     }
 
@@ -413,7 +413,7 @@ footer {
 
     .meannav {
         height: 90px;
-     
+
         clear: both;
         width: 100%;
     }
@@ -557,7 +557,7 @@ footer {
     }
 
     .meannav {
-    
+
         height: 80px;
         clear: both;
         width: 100%;
@@ -701,7 +701,7 @@ footer {
     }
 
     .meannav {
- 
+
         height: 80px;
         clear: both;
         width: 100%;
