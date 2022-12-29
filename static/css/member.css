@@ -50,7 +50,7 @@
 }
 
 .form {
-    height: 550px;
+    height: 350px;
     padding: 20px 50px;
     background-color: #FFFFFF;
     border-radius: 10px;
@@ -513,10 +513,10 @@ h5 {
         font-size: 28px;
         padding: 10px 0 15px 20px;
     }
-    
+
 
     .form {
-        height: 520px;
+        height: 320px;
         padding: 20px 20px;
     }
 
