@@ -21,7 +21,10 @@ def login(request):
      else:
             return redirect('/login/')
 
-    
+
+
+def QA (request):
+    return render(request, 'QA.html')
 # Create your views here.
 
         

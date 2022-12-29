@@ -10,3 +10,5 @@ class userdata(models.Model):
         POINT = models.IntegerField('點數',blank=True)
         IDCARD = models.CharField('身分證字號',max_length=10,blank=True)
 
+
+

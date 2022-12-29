@@ -22,7 +22,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.signin),
     path('signup',views.signup),
-    path('login/',views.login)
+    path('login/',views.login),
+    path('QA',views.QA, name='greet'),
     #path('hi/<username>/', views.hiname),      # 傳遞字串參數 username
     #path('age/<int:year>/', views.age),        # 傳遞數值參數 year
     #path('hello/', views.hello_view),
