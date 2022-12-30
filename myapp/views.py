@@ -33,23 +33,20 @@ def login(request):
 def home(request):
     username=request.session.get('username')
     return render(request,'index.html',locals())
-<<<<<<< HEAD
-         
-    
-    
-            
+
+
+
+
 
 
 def QA (request):
     return render(request, 'QA.html')
 # Create your views here.
-=======
 def member(request):
          # membername==request.session.get('username')
           username=request.session.get('username')
           user=userdata.objects.get(NAME=username)
           userphone=str(user.PHONE)
->>>>>>> 758235adf62ffa7c20e6df7cfeae145dd7cb46e3
 
 
           #user = User.objects.get(username='username')
