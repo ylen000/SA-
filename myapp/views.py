@@ -35,10 +35,6 @@ def home(request):
     return render(request,'index.html',locals())
 
 
-
-
-
-
 def QA (request):
     return render(request, 'QA.html')
 # Create your views here.
@@ -46,9 +42,21 @@ def member(request):
           username=request.session.get('username')
           user=userdata.objects.get(NAME=username)
           userphone=str(user.PHONE)
+          name=str(user.NAME)
+          point=str(user.POINT)
+          point1=int(user.POINT)
+          if 10000000<=point1:
+              level=0
+          elif 15000<=point1<1000000:
+              level=1
           return render(request,'member.html',locals())
 
-
+def receip(request):
+    username=request.session.get('username')
+    user=userdata.objects.get(NAME=username)
+    name=str(user.NAME)
+    point=str(user.POINT)
+    return render(request,'receip.html',locals())
 
 
 
