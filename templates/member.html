@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員中心</title>
+    <link rel="stylesheet" href="../static/css/common.css">
+    <link rel="stylesheet" href="../static/css/member.css">
+</head>
+
+<body>
+    <div class="body">
+        <header class="heading">
+            <div>
+                <a href="index.html"><img class="previous" src="../static/images/home-icon-silhouette.png"></a>
+            </div>
+            <div>
+                <a class="mem" href="member.html">會員中心</a>
+            </div>
+        </header>
+        <main>
+            <section class="signin">
+                <h2>會員資料</h2>
+                <hr>
+                <form class="form" method="get">
+                    {% csrf_token %}
+                    {{form}}
+                    <div class="left">
+                        <div class="signin_form">
+                            <div class="signin_form_text">
+                                會員帳號：<br>
+                            </div>
+                            <input type="tel" name="username" value="{{ userphone }}" required><br>
+                        </div>
+                        <div class="signin_form">
+                            <div class="signin_form_text">
+                                會員名稱：<br>
+
+
+                            </div>
+                            <input type="text" name="myname" value="{{ username }}" required><br>
+                        </div>
+                        <div class="signin_form">
+                            <div class="signin_form_text">
+                                等級：<br>
+                            </div>
+                            <input type="memlevel" name="mylevel" required><br>
+                        </div>
+                    </div>
+                    <div class="signin_form_address">
+                        <div class="signin_form_text">
+                            點數：{{ request.user.POINT }}
+                        </div>
+                        <input type="text" name="mypoint"  ><br>
+                    </div>
+                </form>
+            </section>
+            <section class="order">
+                <h3><a href="memberlook1.html">碳權存摺</a></h3>
+            </section>
+            <script src="../static/js/common.js"></script>
+            <div class="problem">
+                <a href="QA.html"><img style="width: 100%;" src="../static/images/customer-service.png"></a>
+            </div>
+        </main>
+        <footer>
+            <p></p>
+        </footer>
+    </div>
+</body>
+
+</html>
