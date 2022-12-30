@@ -43,15 +43,9 @@ def QA (request):
     return render(request, 'QA.html')
 # Create your views here.
 def member(request):
-         # membername==request.session.get('username')
           username=request.session.get('username')
           user=userdata.objects.get(NAME=username)
           userphone=str(user.PHONE)
-
-
-          #user = User.objects.get(username='username')
-          #mypoint= str(request.GET.get('POINT'))
-          #mylevel= str(request.GET.get('IMAGE_NUMBER'))
           return render(request,'member.html',locals())
 
 
