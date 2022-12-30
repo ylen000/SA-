@@ -33,7 +33,11 @@ def login(request):
 def home(request):
     username=request.session.get('username')
     return render(request,'index.html',locals())
-         
+def rank(request):
+    username=request.session.get('username')
+    rank=userdata.objects.all()
+    return render(request,'leaderboard.html',locals())
+                 
     
     
             

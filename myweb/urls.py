@@ -26,7 +26,7 @@ urlpatterns = [
     path('login/',views.login),
     path('login/index',views.home),
     path('login/signin', views.signin),
-    
+    path('rank', views.rank),
     
     #path('hi/<username>/', views.hinampath('myweb/', include('myweb.urls'))e),      # 傳遞字串參數 username
     #path('age/<int:year>/', views.age),        # 傳遞數值參數 year
