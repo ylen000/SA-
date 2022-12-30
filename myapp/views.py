@@ -33,6 +33,13 @@ def login(request):
 def home(request):
     username=request.session.get('username')
     return render(request,'index.html',locals())
+<<<<<<< HEAD
+         
+    
+    
+            
+=======
+>>>>>>> 480100944876d110e11225891306bc4d907cc11a
 
 
 def QA (request):
@@ -43,12 +50,21 @@ def member(request):
           user=userdata.objects.get(NAME=username)
           userphone=str(user.PHONE)
           name=str(user.NAME)
+<<<<<<< HEAD
+          name=str(user.NAME)
+
+
+          #user = User.objects.get(username='username')
+          #mypoint= str(request.GET.get('POINT'))
+          #mylevel= str(request.GET.get('IMAGE_NUMBER'))
+=======
           point=str(user.POINT)
           point1=int(user.POINT)
           if 10000000<=point1:
               level=0
           elif 15000<=point1<1000000:
               level=1
+>>>>>>> 480100944876d110e11225891306bc4d907cc11a
           return render(request,'member.html',locals())
 
 def receip(request):
