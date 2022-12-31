@@ -28,12 +28,9 @@ urlpatterns = [
     #path('hi/<username>/', views.hiname),      # 傳遞字串參數 username
     path('login/index',views.home),
     path('login/signin', views.signin),
-<<<<<<< HEAD
-    path('QA/',views.QA, name='greet')
-=======
+    
     path('receip/',views.receip),
-    path('QA',views.QA, name='greet')
->>>>>>> 480100944876d110e11225891306bc4d907cc11a
+    path('QA/',views.QA)
 
 
     #path('hi/<username>/', views.hinampath('myweb/', include('myweb.urls'))e),      # 傳遞字串參數 username
