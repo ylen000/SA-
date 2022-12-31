@@ -17,6 +17,4 @@ class QAN(models.Model):
         QUESTIONS = models.CharField('問題回報',max_length=500,blank = False,null=False)
         
 
-#class memberlevel(models.Model):
-       # IMAGE = models.ImageField(upload_to="../static/images",blank=False, null=False)
-        #IMAGE_NUMBER = models.CharField('等級',max_length=32)
+

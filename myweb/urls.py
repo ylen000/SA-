@@ -32,7 +32,7 @@ urlpatterns = [
     path('QA/',views.QA, name='greet'),
     path('rank',views.rank),
     path('receip/',views.receip),
-    path('QA',views.QA, name='greet')
+    #path('QA',views.QA, name='greet')
 
 
 
