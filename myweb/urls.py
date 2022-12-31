@@ -19,6 +19,7 @@ from myapp import views
 
 
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.signin),
@@ -29,7 +30,10 @@ urlpatterns = [
     path('login/index',views.home),
     path('login/signin', views.signin),
     path('receip/',views.receip),
-    path('QA',views.QA, name='greet')
+    path('QA/',views.QA, name='greet'),
+    path('rank',views.rank),
+
+
 
 
     #path('hi/<username>/', views.hinampath('myweb/', include('myweb.urls'))e),      # 傳遞字串參數 username

@@ -4,6 +4,8 @@ from datetime import datetime
 from myapp.models import userdata
 from django.http import Http404
 from django.contrib import auth
+from django.db.models import F, Func, Value
+from django.db.models import Max
 
 
 # Create your views here.
@@ -37,6 +39,14 @@ def home(request):
 
 
 
+def rank(request):
+    username=request.session.get('username')
+    ranking_list=userdata.objects.all().order_by('-POINT')
+    rank = ranking_list.filter(POINT__gt=ranking_list.get(NAME=username).POINT).count() + 1
+    return render(request,'leaderboard.html',locals())
+
+
+#def rerank(request):
 
 
 def QA (request):
