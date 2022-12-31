@@ -12,9 +12,6 @@ class userdata(models.Model):
 
 
 
-class QAN(models.Model):
-        NAMES = models.CharField('使用者名稱',max_length=20, null=False)
-        QUESTIONS = models.CharField('問題回報',max_length=500,blank = False,null=False)
-        
+
 
 

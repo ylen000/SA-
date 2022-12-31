@@ -42,12 +42,10 @@ def rank(request):
     return render(request,'leaderboard.html',locals())
 
      
-#def rerank(request):
 
-
-def QA (request):
+#def QA (request):
     return render(request, 'QA.html')
-# Create your views here.
+
 def member(request):
           username=request.session.get('username')
           user=userdata.objects.get(NAME=username)
