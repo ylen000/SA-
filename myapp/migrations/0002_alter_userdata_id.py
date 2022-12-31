@@ -16,3 +16,19 @@ class Migration(migrations.Migration):
             field=models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID'),
         ),
     ]
+
+
+
+class Migration(migrations.Migration):
+
+    dependencies = [
+        ('myapp', '0001_initial'),
+    ]
+
+    operations = [
+        migrations.AlterField(
+            model_name='QAN',
+            name='id',
+            field=models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID'),
+        ),
+    ]
