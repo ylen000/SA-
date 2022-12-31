@@ -29,8 +29,11 @@ urlpatterns = [
     path('login/index',views.home),
     path('login/signin', views.signin),
     
-    path('receip/',views.receip),
-    path('QA/',views.QA)
+    #path('receip/',views.receip),
+    path('QA/',views.QA),
+    path('123',views.QAQ),
+    path('QAW/',views.QAw),
+    path('rank',views.rank)
 
 
     #path('hi/<username>/', views.hinampath('myweb/', include('myweb.urls'))e),      # 傳遞字串參數 username
@@ -39,3 +42,5 @@ urlpatterns = [
     # path(r'^admin/', admin.site.urls),
     # path(r'^$', sayhello),
 ]
+
+
