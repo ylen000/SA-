@@ -19,7 +19,6 @@ from myapp import views
 
 
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.signin),
@@ -29,11 +28,9 @@ urlpatterns = [
     #path('hi/<username>/', views.hiname),      # 傳遞字串參數 username
     path('login/index',views.home),
     path('login/signin', views.signin),
-    path('QA/',views.QA, name='greet'),
-    path('rank',views.rank),
-    path('receip/',views.receip),
-    #path('QA',views.QA, name='greet')
-
+    path('123',views.QAQ),
+    path('QAW/',views.QAw),
+    path('rank',views.rank)
 
 
     #path('hi/<username>/', views.hinampath('myweb/', include('myweb.urls'))e),      # 傳遞字串參數 username
@@ -42,3 +39,5 @@ urlpatterns = [
     # path(r'^admin/', admin.site.urls),
     # path(r'^$', sayhello),
 ]
+
+
