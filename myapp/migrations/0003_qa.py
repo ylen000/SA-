@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('myapp', '0002_alter_userdata_id copy'),
+        ('myapp', '0002_alter_userdata_id'),
     ]
 
     operations = [

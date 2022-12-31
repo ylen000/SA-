@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>炭制郎-載具</title>
+    <link rel="stylesheet" href="../static/css/receip.css">
 </head>
 <style>
-    @import url(../static/css/receip.css);
+    
 </style>
-<body>
+<body style="background-image: url(../static/images/earth2.jpg);">
     <header class="heading">
         <div>
-            <a href="index.html"><img class="previous" src="../asset/image/home-icon-silhouette.png"></a>
+            <a href="index.html"><img class="previous" src="../static/images/home-icon-silhouette.png"></a>
         </div>
         <div>
             <a class="mem" href="member.html">會員中心</a>
@@ -22,17 +23,17 @@
         <div class="body">
             <div class="body2">
                 <div class="userphoto" id="">
-                    <img width="20%" src="../asset/image/user.png">
+                    <img width="20%" src="../static/images/user.png">
                 </div>
-                <p>username</p>
-                <p>point:666666</p>
-                <img id="rimg" width="30%" src="../asset/image/barcode.png">
+                <p>{{name}}</p>
+                <p>點數:{{point}}</p>
+                <img id="rimg" width="30%" src="../static/images/barcode.png">
             </div>
 
         </div>
     </article>
     <div class="problem">
-        <a href="QA.html"><img style="width: 100%;" src="../asset/image/customer-service.png"></a>
+        <a href="QA.html"><img style="width: 100%;" src="../static/images/customer-service.png"></a>
     </div>
 </body>
 </html>

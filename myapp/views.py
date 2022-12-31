@@ -36,23 +36,27 @@ def login(request):
 def home(request):
     username=request.session.get('username')
     return render(request,'index.html',locals())
-         
-    
-    
+
 def rank(request):
     username=request.session.get('username')
     ranking_list=userdata.objects.all().order_by('-POINT')
     rank = ranking_list.filter(POINT__gt=ranking_list.get(NAME=username).POINT).count() + 1
     return render(request,'leaderboard.html',locals())
 
+     
+
+#def rerank(request):
 
 
-
+    
+    
             
 
-
+#顯示QA介面
 def QAQ (request):
     return render(request, 'QA.html')
+
+#寫入資料庫 
 def QAw(request):
     q = request.POST.get('question')
     if q =="":
@@ -76,28 +80,20 @@ def member(request):
           username=request.session.get('username')
           user=userdata.objects.get(NAME=username)
           userphone=str(user.PHONE)
-          name=str(user.NAME)
-
-          name=str(user.NAME)
 
 
           #user = User.objects.get(username='username')
           #mypoint= str(request.GET.get('POINT'))
           #mylevel= str(request.GET.get('IMAGE_NUMBER'))
+          return render(request,'member.html',locals())
 
-          point=str(user.POINT)
-          point1=int(user.POINT)
-          if 10000000<=point1:
-              level=0
-          elif 15000<=point1<1000000:
-              level=1
-
-          #return render(request,'member.html',locals())
-
+def receip(request):
+    username=request.session.get('username')
+    user=userdata.objects.get(NAME=username)
+    name=str(user.NAME)
+    point=str(user.POINT)
+    return render(request,'receip.html',locals())
 
 
 
-
-
-
-
+# Create your views here.
