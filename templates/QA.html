@@ -32,10 +32,10 @@
         </div>-->
         <div class="signinbody">
             <div class="signbg">
-                {% block main %}
+                {% csrf_token %}
                 <form id="QA" action="/QA/" method='post'>
                     <div class="sign">
-                        {% csrf_token %}
+                        
                         <div class="" style="width: 100%;"><h1><b>問題回報</b></h1><hr><br></div>
                         <!--<input style="display: flex;" value="請輸入標題"><br>-->
                         <textarea id="TXT" name="TXT"  rows="5" cols="40" style="width: 100%; " required >
@@ -47,7 +47,7 @@
                         <a style="color: black;" href="">Forget password?</a>-->
                     </div>
                 </form>
-                {% endblock %}
+                
             </div>
             
         </div>

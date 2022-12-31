@@ -1,5 +1,5 @@
 body{
-    background-image: url(../image/earth2.jpg);
+    background-image: url(../images/earth2.jpg);
     background-size:cover;
     font-weight: bold;
     background-position: center;
@@ -7,11 +7,11 @@ body{
 }
 
 .heading{
-    
+
     font-size: 18px;
     padding: 1%;
     font-weight: bolder;
-    
+
 }
 .mem
 {
@@ -41,12 +41,12 @@ article{
 }
 .body
 {
-    width: auto; 
+    width: auto;
     background-color: rgba(44, 122, 49, 0.562);
     border-radius: 10px;
     padding: 10%;
     text-align: center;
-    
+
 }
 .sign
 {

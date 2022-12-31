@@ -26,7 +26,7 @@
                 <hr>
                 <form class="form" method="get">
                     {% csrf_token %}
-                    {{form}}
+
                     <div class="left">
                         <div class="signin_form">
                             <div class="signin_form_text">
@@ -40,20 +40,24 @@
 
 
                             </div>
-                            <input type="text" name="myname" value="{{ username }}" required><br>
+<<<<<<< HEAD
+                            <input type="text" name="myname" value="{{ name }}" required><br>
+=======
+                            <input type="text" name="myname" value="{{name}}" required><br>
+>>>>>>> 480100944876d110e11225891306bc4d907cc11a
                         </div>
                         <div class="signin_form">
                             <div class="signin_form_text">
                                 等級：<br>
                             </div>
-                            <input type="memlevel" name="mylevel" required><br>
+                            <input type="memlevel" name="mylevel" value='{{level}}' required><br>
                         </div>
                     </div>
                     <div class="signin_form_address">
                         <div class="signin_form_text">
-                            點數：{{ request.user.POINT }}
+                            點數：
                         </div>
-                        <input type="text" name="mypoint"  ><br>
+                        <input type="text" name="mypoint" value='{{point}}' ><br>
                     </div>
                 </form>
             </section>
