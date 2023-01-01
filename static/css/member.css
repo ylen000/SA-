@@ -2,6 +2,7 @@
     background-color: #FFFFFF;
     border-radius: 10px;
     margin: 74px 25% 0 25%;
+    
 }
 
 .order>h2,
@@ -273,6 +274,7 @@ h5 {
 @media screen and (max-width:800px) {
     .signin {
         margin: 140px 10% 0px 10%;
+        
     }
 
     .order>h2,

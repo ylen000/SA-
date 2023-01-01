@@ -30,7 +30,8 @@ urlpatterns = [
     path('login/signin', views.signin),
     path('123',views.QAQ),
     path('QAW/',views.QAw),
-    path('rank',views.rank)
+    path('rank',views.rank),
+    path('receip/',views.receip),
 
 
     #path('hi/<username>/', views.hinampath('myweb/', include('myweb.urls'))e),      # 傳遞字串參數 username
