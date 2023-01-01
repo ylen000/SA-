@@ -84,8 +84,3 @@ def member(request):
           #mylevel= str(request.GET.get('IMAGE_NUMBER'))
           return render(request,'member.html',locals())
 
-
-
-
-
-# Create your views here.

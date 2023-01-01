@@ -30,6 +30,7 @@ urlpatterns = [
     path('login/signin', views.signin),
     path('123',views.QAQ),
     path('QAW/',views.QAw),
+    path('login/QA', views.QA),
     path('rank',views.rank)
 
 
