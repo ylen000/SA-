@@ -24,3 +24,23 @@ class Migration(migrations.Migration):
             ],
         ),
     ]
+
+
+class Migration(migrations.Migration):
+
+    initial = True
+
+    dependencies = [
+    ]
+
+    operations = [
+        migrations.CreateModel(
+            name='QAN',
+            fields=[
+                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='MEMID')),
+                ('NAMES', models.CharField(max_length=20, verbose_name='使用者名稱')),
+                ('QUESTIONS', models.CharField(max_length=500,verbose_name='問題回報'))
+            ]
+
+        )
+    ]
