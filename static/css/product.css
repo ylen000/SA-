@@ -1,0 +1,1440 @@
+    /*商品圖片*/
+    .photo {
+        width: 36%;
+        height: auto;
+        float: left;
+        margin: 80px 20px 0px 125px;
+    }
+
+    .photobig img {
+        margin: 25px 0 5px 25px;
+        width: 90%;
+        max-height: 470px;
+        border: 0.5px solid #e0e0e0;
+    }
+
+    .photosmall {
+        margin: 0px 25px 20px 25px;
+    }
+
+    .photosmall img {
+        width: 80px;
+        height: 80px;
+        border: 1px solid #e0e0e0;
+    }
+
+    .photosmall img:hover {
+        border: 1px solid #86613f;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    /*商品簡介*/
+    .product_text {
+        float: right;
+        width: 35%;
+        margin: 100px 230px 0px 50px;
+    }
+
+    .product_text>h1 {
+        font-size: 32px;
+        margin: 0;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        color: gray;
+    }
+
+    .product_text_price {
+        margin: 0;
+        padding: 16px 0 0 0;
+        font-size: 28px;
+        color: #ce1613;
+    }
+
+    .product_text>form {
+        float: left;
+    }
+
+    .product_text_number {
+        float: left;
+        padding: 20px 0 10px;
+        font-size: 20px;
+    }
+
+    .product_text_number>input {
+        border: 1px solid #9f7855;
+        border-radius: 5PX;
+        outline-style: none;
+        padding: 6px;
+    }
+
+    .stock {
+        font-size: 14px;
+        color: gray;
+        float: left;
+        padding: 30px 0 0 5px;
+    }
+
+    .product_text_buy {
+        margin: 0;
+        padding: 20px 0 18px 0;
+        clear: both;
+    }
+
+    .product_text_buy>input {
+        margin: 0px;
+        font-weight: 550;
+        font-size: 16px;
+        padding: 5px 80px;
+        border: 2px solid #9f7855;
+        border-radius: 5px;
+        background-color: #FFFFFF;
+    }
+
+    .product_text_buy>input:hover {
+        cursor: pointer;
+        background-color: #9f7855;
+        border-color: #86613f;
+        color: #FFFFFF;
+    }
+
+    .product_text_detail {
+        clear: both;
+        padding-bottom: 1px;
+    }
+
+    .product_text_detail>p {
+        line-height: 36px;
+        text-indent: 16px;
+        font-size: 16px;
+        padding-top: 0px;
+    }
+
+    .product_text_detail>h4 {
+        padding-top: 10px;
+        margin-bottom: 0px;
+        font-size: 16px;
+    }
+
+    .product_text_detail>hr {
+        border: 0.5px solid #e0c295;
+    }
+
+    /*星級&留言板*/
+    .feedback {
+        margin: 80px 20px 50px 130px;
+        padding: 0 20px 10px 20px;
+        clear: both;
+        float: left;
+        width: 26%;
+    }
+
+    .feedback>h2 {
+        background-color: #e0c295;
+        padding: 10px 0px 10px 15px;
+        margin-bottom: 0px;
+    }
+
+    .similar_bless>hr,
+    .similar>hr,
+    .feedback>hr {
+        margin: 0;
+        border: 0.5px solid #9f7855;
+    }
+
+    .feedback>form {
+        padding: 0 0 15px 20px;
+        background-color: #e0c295;
+    }
+
+    .feedback_name {
+        padding-top: 16px;
+    }
+
+    .feedback_name>input {
+        border: 2px solid #9f7855;
+        border-radius: 5px;
+        outline-style: none;
+        padding: 5px;
+    }
+
+    /*星星*/
+    .feedback_star {
+        clear: both;
+        margin: 6px 0 20px 0;
+        float: left;
+    }
+
+    .feedback_star_name {
+        padding-top: 4px;
+        height: 30px;
+        float: left;
+    }
+
+    .star {
+        width: 70%;
+        float: right;
+    }
+
+    .my-rating-6 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    /*留言*/
+    .feedback_message {
+        clear: both;
+    }
+
+
+    .feedback_message>textarea {
+        border: 2px solid #9f7855;
+        border-radius: 5px;
+        outline-style: none;
+        padding: 5px;
+        margin-top: 4px;
+        resize: none;
+    }
+
+    .feedback>form>input {
+        outline-style: none;
+        padding: 5px;
+        width: 35%;
+        margin: 10px 45px 0 0;
+        border: 2px solid #9f7855;
+        border-radius: 5px;
+        background-color: #FFFFFF;
+    }
+
+    .feedback>form>input:hover {
+        cursor: pointer;
+        background-color: #9f7855;
+        border-color: #86613f;
+        color: #FFFFFF;
+    }
+
+    /*同類商品*/
+    .similar_bless {
+        background-color: #e0c295;
+        padding-bottom: 15px;
+        margin: 80px 16.9% 50px 50px;
+        width: auto;
+        height: 340px;
+        float: right;
+    }
+
+    .similar {
+        background-color: #e0c295;
+        padding-bottom: 15px;
+        margin: 80px 5% 50px 50px;
+        width: auto;
+        height: 340px;
+        float: right;
+    }
+
+    .similar_bless>h2,
+    .similar>h2 {
+        padding: 10px 0px 10px 15px;
+        margin: 0px;
+    }
+
+    .similar_product1>a>img {
+        padding: 15px 7.5px 0 15px;
+        height: 180px;
+        width: 180px;
+    }
+
+    .similar_bless_product2>a>img,
+    .similar_product2>a>img,
+    .similar_product3>a>img {
+        padding: 15px 7.5px 0 7.5px;
+        height: 180px;
+        width: 180px;
+    }
+
+    .similar_bless_product3>a>img,
+    .similar_product4>a>img {
+        padding: 15px 15px 0 7.5px;
+        height: 180px;
+        width: 180px;
+    }
+
+    .similar_product1>p,
+    .similar_bless_product2>p,
+    .similar_bless_product3>p,
+    .similar_product2>p,
+    .similar_product3>p,
+    .similar_product4>p {
+        text-align: center;
+        margin: 0;
+        padding: 10px 12px 0 12px;
+    }
+
+    .similar_product1>p>span,
+    .similar_bless_product2>p>span,
+    .similar_bless_product3>p>span,
+    .similar_product2>p>span,
+    .similar_product3>p>span,
+    .similar_product4>p>span {
+        color: #ce1613;
+    }
+
+    @media screen and (min-width:1280px) {
+
+        /*商品圖片*/
+        .photo {
+            width: 40%;
+            margin: 74px 10px 0px 30px;
+        }
+
+        /*商品簡介*/
+        .product_text {
+            width: 45%;
+            margin: 74px 0px 0px 0px;
+        }
+
+        .product_text>h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .subtitle {
+            font-size: 13px;
+        }
+
+        .product_text_price {
+            padding: 14px 0 0 0;
+            font-size: 24px;
+        }
+
+        .product_text_number {
+            padding: 15px 0 10px;
+            font-size: 18px;
+        }
+
+        .product_text_number>input {
+            padding: 6px 0 4px 4px;
+        }
+
+        .stock {
+            font-size: 13px;
+            padding: 25px 0 0 5px;
+        }
+
+        .product_text_detail>p {
+            line-height: 26px;
+            font-size: 14px;
+        }
+
+        /*星級&留言板*/
+        .feedback {
+            margin: 80px 0px 50px 40px;
+            padding: 0 10px 10px 20px;
+            width: 40%;
+        }
+
+        .feedback>form {
+            padding: 0 0 15px 20px;
+            background-color: #e0c295;
+        }
+
+        .feedback_name {
+            padding-top: 16px;
+        }
+
+        .feedback_name>input {
+            border: 2px solid #9f7855;
+            border-radius: 5px;
+            outline-style: none;
+            padding: 5px;
+        }
+
+        /*星星*/
+        .star {
+            width: 62%;
+            float: left;
+        }
+
+        /*留言*/
+        .feedback_message>textarea {
+            width: 90%;
+        }
+
+        .feedback>form>input {
+            width: 32%;
+            margin: 10px 42px 0 2px;
+        }
+
+        /*同類商品*/
+        .similar_bless,
+        .similar {
+            padding-bottom: 15px;
+            margin: 80px 40px 50px 10px;
+            width: 43%;
+            height: 540px;
+            float: right;
+        }
+
+        .similar_product1>a>img {
+            padding: 0;
+            margin: 15px 7.5px 0 15px;
+            height: 125px;
+            width: 125px;
+        }
+
+        .similar_bless_product2>a>img,
+        .similar_product2>a>img {
+            padding: 0;
+            margin: 15px 7.5px 0 7.5px;
+            height: 125px;
+            width: 125px;
+        }
+
+        .similar_bless_product3>a>img {
+            position: absolute;
+            padding: 0;
+            margin: 15px 7.5px 0 15px;
+            height: 125px;
+            width: 125px;
+            right: 190px;
+            bottom: -550px;
+        }
+
+        .similar_bless_product3>p {
+            position: absolute;
+            padding: 0;
+            text-align: center;
+            margin: 10px 12px 0 12px;
+            right: 190px;
+            bottom: -600px;
+        }
+
+        .similar_bless_product3>p>span {
+            position: absolute;
+            right: 0;
+            width: 100px;
+            bottom: -40px;
+            margin: 6px 8px 8px 8px;
+        }
+
+        .similar_product3>a>img {
+            position: absolute;
+            padding: 0;
+            margin: 15px 7.5px 0 15px;
+            height: 125px;
+            width: 125px;
+            right: 27.5%;
+            bottom: -585px;
+        }
+
+        .similar_product3>p {
+            position: absolute;
+            padding: 0;
+            text-align: center;
+            margin: 10px 12px 0 12px;
+            right: 27.5%;
+            bottom: -640px;
+        }
+
+        .similar_product3>p>span {
+            position: absolute;
+            right: 0;
+            width: 100px;
+            bottom: -40px;
+            margin: 6px 8px 8px 8px;
+        }
+
+        .similar_product4>a>img {
+            position: absolute;
+            padding: 0;
+            margin: 15px 15px 0 7.5px;
+            height: 125px;
+            width: 125px;
+            right: 5.5%;
+            bottom: -585px;
+        }
+
+        .similar_product4>p {
+            position: absolute;
+            padding: 0;
+            text-align: center;
+            margin: 10px 12px 0 12px;
+            right: 6%;
+            bottom: -640px;
+        }
+
+        .similar_product4>p>span {
+            position: absolute;
+            right: 12px;
+            width: 100px;
+            bottom: -40px;
+            margin: 4px 4px 5px 7px;
+        }
+
+        .similar_product1>p,
+        .similar_bless_product2>p,
+        .similar_product2>p {
+            text-align: center;
+            margin: 0;
+            padding: 10px 12px 0 12px;
+        }
+
+    }
+@media screen and (max-width:800px) {
+
+        /*商品圖片*/
+        .photo {
+            width: 40%;
+            margin: 74px 10px 0px 30px;
+        }
+
+        /*商品簡介*/
+        .product_text {
+            width: 45%;
+            margin: 74px 40px 0px 20px;
+        }
+
+        .product_text>h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .subtitle {
+            font-size: 13px;
+        }
+
+        .product_text_price {
+            padding: 14px 0 0 0;
+            font-size: 24px;
+        }
+
+        .product_text_number {
+            padding: 15px 0 10px;
+            font-size: 18px;
+        }
+
+        .product_text_number>input {
+            padding: 6px 0 4px 4px;
+        }
+
+        .stock {
+            font-size: 13px;
+            padding: 25px 0 0 5px;
+        }
+
+        .product_text_detail>p {
+            line-height: 26px;
+            font-size: 14px;
+        }
+
+        /*星級&留言板*/
+        .feedback {
+            margin: 80px 0px 50px 40px;
+            padding: 0 10px 10px 20px;
+            width: 40%;
+        }
+
+        .feedback>form {
+            padding: 0 0 15px 20px;
+            background-color: #e0c295;
+        }
+
+        .feedback_name {
+            padding-top: 16px;
+        }
+
+        .feedback_name>input {
+            border: 2px solid #9f7855;
+            border-radius: 5px;
+            outline-style: none;
+            padding: 5px;
+        }
+
+        /*星星*/
+        .star {
+            width: 62%;
+            float: left;
+        }
+
+        /*留言*/
+        .feedback_message>textarea {
+            width: 90%;
+        }
+
+        .feedback>form>input {
+            width: 32%;
+            margin: 10px 42px 0 2px;
+        }
+
+        /*同類商品*/
+        .similar_bless,
+        .similar {
+            padding-bottom: 15px;
+            margin: 80px 40px 50px 10px;
+            width: 43%;
+            height: 540px;
+            float: right;
+        }
+
+        .similar_product1>a>img {
+            padding: 0;
+            margin: 15px 7.5px 0 15px;
+            height: 125px;
+            width: 125px;
+        }
+
+        .similar_bless_product2>a>img,
+        .similar_product2>a>img {
+            padding: 0;
+            margin: 15px 7.5px 0 7.5px;
+            height: 125px;
+            width: 125px;
+        }
+
+        .similar_bless_product3>a>img {
+            position: absolute;
+            padding: 0;
+            margin: 15px 7.5px 0 15px;
+            height: 125px;
+            width: 125px;
+            right: 190px;
+            bottom: -550px;
+        }
+
+        .similar_bless_product3>p {
+            position: absolute;
+            padding: 0;
+            text-align: center;
+            margin: 10px 12px 0 12px;
+            right: 190px;
+            bottom: -600px;
+        }
+
+        .similar_bless_product3>p>span {
+            position: absolute;
+            right: 0;
+            width: 100px;
+            bottom: -40px;
+            margin: 6px 8px 8px 8px;
+        }
+
+        .similar_product3>a>img {
+            position: absolute;
+            padding: 0;
+            margin: 15px 7.5px 0 15px;
+            height: 125px;
+            width: 125px;
+            right: 27.5%;
+            bottom: -585px;
+        }
+
+        .similar_product3>p {
+            position: absolute;
+            padding: 0;
+            text-align: center;
+            margin: 10px 12px 0 12px;
+            right: 27.5%;
+            bottom: -640px;
+        }
+
+        .similar_product3>p>span {
+            position: absolute;
+            right: 0;
+            width: 100px;
+            bottom: -40px;
+            margin: 6px 8px 8px 8px;
+        }
+
+        .similar_product4>a>img {
+            position: absolute;
+            padding: 0;
+            margin: 15px 15px 0 7.5px;
+            height: 125px;
+            width: 125px;
+            right: 5.5%;
+            bottom: -585px;
+        }
+
+        .similar_product4>p {
+            position: absolute;
+            padding: 0;
+            text-align: center;
+            margin: 10px 12px 0 12px;
+            right: 6%;
+            bottom: -640px;
+        }
+
+        .similar_product4>p>span {
+            position: absolute;
+            right: 12px;
+            width: 100px;
+            bottom: -40px;
+            margin: 4px 4px 5px 7px;
+        }
+
+        .similar_product1>p,
+        .similar_bless_product2>p,
+        .similar_product2>p {
+            text-align: center;
+            margin: 0;
+            padding: 10px 12px 0 12px;
+        }
+
+    }
+
+    @media screen and (max-width:700px) {
+
+        /*商品圖片*/
+        .photo {
+            width: 45%;
+            margin: 74px 10px 0px 10px;
+        }
+
+        /*商品簡介*/
+        .product_text {
+            width: 45%;
+            margin: 74px 20px 0px 20px;
+        }
+
+        .product_text>h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .subtitle {
+            font-size: 13px;
+        }
+
+        .product_text_price {
+            padding: 14px 0 0 0;
+            font-size: 24px;
+        }
+
+        .product_text_number {
+            padding: 15px 0 10px;
+            font-size: 18px;
+        }
+
+        .product_text_number>input {
+            padding: 6px 0 4px 4px;
+        }
+
+        .stock {
+            font-size: 13px;
+            padding: 25px 0 0 5px;
+        }
+
+        .product_text_detail>p {
+            line-height: 26px;
+            font-size: 14px;
+        }
+
+        /*星級&留言板*/
+        .feedback {
+            margin: 80px 0px 50px 10px;
+            padding: 0 10px 10px 20px;
+            width: 40%;
+        }
+
+        .feedback>form {
+            padding: 0 0 15px 20px;
+            background-color: #e0c295;
+        }
+
+        .feedback_name {
+            padding-top: 16px;
+        }
+
+        .feedback_name>input {
+            border: 2px solid #9f7855;
+            border-radius: 5px;
+            outline-style: none;
+            padding: 5px;
+        }
+
+        /*星星*/
+        .star {
+            width: 62%;
+            float: left;
+        }
+
+        /*留言*/
+        .feedback_message>textarea {
+            width: 90%;
+        }
+
+        .feedback>form>input {
+            width: 32%;
+            margin: 10px 42px 0 2px;
+        }
+
+        /*同類商品*/
+        .similar_bless,
+        .similar {
+            padding-bottom: 15px;
+            margin: 80px 20px 50px 10px;
+            width: 48%;
+            height: 540px;
+            float: right;
+        }
+
+        .similar_product1>a>img {
+            padding: 0;
+            margin: 15px 15px 0;
+            height: 115px;
+            width: 115px;
+        }
+
+        .similar_bless_product2>a>img,
+        .similar_product2>a>img {
+            padding: 0;
+            margin: 15px 15px 0;
+            height: 115px;
+            width: 115px;
+        }
+
+        .similar_bless_product3>a>img {
+            position: absolute;
+            padding: 0;
+            margin: 15px 15px 0;
+            height: 115px;
+            width: 115px;
+            right: 0;
+            left: 49%;
+            bottom: -550px;
+        }
+
+        .similar_bless_product3>p {
+            width: 145px;
+            position: absolute;
+            padding: 0;
+            text-align: center;
+            margin: 10px 12px 0 12px;
+            right: 0;
+            left: 47%;
+            bottom: -610px;
+        }
+
+        .similar_bless_product3>p>span {
+            position: absolute;
+            left: 10px;
+            right: 0;
+            width: 100px;
+            bottom: -40px;
+            margin: 6px 8px 8px 8px;
+        }
+
+        .similar_product3>a>img {
+            position: absolute;
+            padding: 0;
+            margin: 15px 15px 0;
+            height: 115px;
+            width: 115px;
+            right: 27%;
+            bottom: -585px;
+        }
+
+        .similar_product3>p {
+            position: absolute;
+            padding: 0;
+            text-align: center;
+            margin: 10px 12px 0 12px;
+            right: 27.5%;
+            bottom: -640px;
+        }
+
+        .similar_product3>p>span {
+            position: absolute;
+            right: 0;
+            width: 100px;
+            bottom: -40px;
+            margin: 6px 8px 8px 8px;
+        }
+
+        .similar_product4>a>img {
+            position: absolute;
+            padding: 0;
+            margin: 15px 15px 0;
+            height: 115px;
+            width: 115px;
+            right: 3%;
+            bottom: -585px;
+        }
+
+        .similar_product4>p {
+            position: absolute;
+            padding: 0;
+            text-align: center;
+            margin: 10px 12px 0 12px;
+            right: 2.5%;
+            bottom: -640px;
+        }
+
+        .similar_product4>p>span {
+            position: absolute;
+            right: 12px;
+            width: 100px;
+            bottom: -40px;
+            margin: 4px 4px 5px 7px;
+        }
+
+        .similar_product1>p,
+        .similar_bless_product2>p,
+        .similar_product2>p {
+            text-align: center;
+            margin: 0;
+            padding: 10px 12px 0 12px;
+        }
+
+    }
+
+    @media screen and (max-width:620px) {
+
+        /*商品圖片*/
+        .photo {
+            width: 95%;
+            height: auto;
+            clear: both;
+            margin: 90px 10% 0px 3%;
+        }
+
+        .photobig img {
+            margin: 25px 0 5px 18px;
+            width: 90%;
+        }
+
+        .photosmall {
+            margin: 0px 25px 20px 18px;
+        }
+
+        /*商品簡介*/
+        .product_text {
+            clear: both;
+            width: 85%;
+            margin: 5px 8% 0px 5%;
+        }
+
+        .product_text>h1 {
+            position: absolute;
+            top: 100px;
+            font-size: 28px;
+            margin: 0;
+        }
+
+        .subtitle {
+            font-size: 14px;
+        }
+
+        .product_text_price {
+            margin: 0;
+            padding: 0;
+            font-size: 28px;
+        }
+
+        .product_text>form {
+            clear: both;
+        }
+
+        .product_text_number {
+            clear: both;
+            padding: 20px 0 10px;
+            font-size: 18px;
+        }
+
+        .product_text_number>input {
+            padding: 4px;
+        }
+
+        .stock {
+            font-size: 16px;
+            padding: 25px 0 0 5px;
+        }
+
+        .product_text_buy {
+            margin-left: 100%;
+            padding: 20px 0 30px 0;
+            clear: both;
+        }
+
+        .product_text_buy>input {
+            font-size: 16px;
+            padding: 5px 20px;
+        }
+
+        .product_text_detail {
+            clear: both;
+            padding-bottom: 1px;
+        }
+
+        .product_text_detail>p {
+            line-height: 30px;
+        }
+
+        /*星級&留言板*/
+        .feedback {
+            margin: 780px 5% 50px;
+            padding: 0;
+            clear: both;
+            width: 90%;
+        }
+
+        .feedback>h2 {
+            padding: 10px 0px 10px 15px;
+            margin-bottom: 0px;
+        }
+
+        .feedback>form {
+            padding: 0 0 15px 20px;
+        }
+
+        .feedback_name {
+            padding-top: 16px;
+        }
+
+        .feedback_name>input {
+            border: 2px solid #9f7855;
+            border-radius: 5px;
+            outline-style: none;
+            padding: 5px;
+        }
+
+        /*星星*/
+        .feedback_star {
+            clear: both;
+            margin: 6px 0 20px 0;
+            float: left;
+        }
+
+        .feedback_star_name {
+            padding-top: 4px;
+            height: 30px;
+            float: left;
+        }
+
+        .star {
+            width: 60%;
+            float: left;
+        }
+
+        /*留言*/
+        .feedback_message {
+            clear: both;
+        }
+
+        .feedback_message>textarea {
+            width: 86%;
+        }
+
+        .feedback>form>input {
+            padding: 5px;
+            width: 40%;
+            margin: 10px 25px 0 0;
+        }
+
+        /*同類商品*/
+        .similar_bless {
+            position: absolute;
+            bottom: -1320px;
+            padding-bottom: 15px;
+            margin: 40px 5%;
+            width: 90%;
+            height: 680px;
+            clear: both;
+        }
+
+        .similar {
+            position: absolute;
+            bottom: -1350px;
+            padding-bottom: 15px;
+            margin: 40px 5% 40px 5%;
+            width: 90%;
+            height: 680px;
+            clear: both;
+        }
+
+        .similar_product1,
+        .similar_bless_product2,
+        .similar_bless_product3,
+        .similar_product2,
+        .similar_product3,
+        .similar_product4 {
+            padding: 1%;
+        }
+
+        .similar_product1>a>img,
+        .similar_bless_product2>a>img,
+        .similar_product2>a>img {
+            margin: 8px;
+            padding: 10px;
+            height: 200px;
+            width: 200px;
+        }
+
+        .similar_product1>p,
+        .similar_bless_product2>p,
+        .similar_product2>p {
+            text-align: center;
+            margin: 0;
+            padding: 0 12px 10px 12px;
+        }
+
+        .similar_bless_product3>a>img {
+            position: absolute;
+            bottom: 16%;
+            left: 0;
+            padding: 10px;
+            height: 200px;
+            width: 200px;
+        }
+
+        .similar_bless_product3>p {
+            width: 210px;
+            position: absolute;
+            bottom: 7%;
+            left: 0px;
+            margin: 0;
+            padding: 0 12px 10px 12px;
+        }
+
+        .similar_bless_product3>p>span {
+            position: absolute;
+            left: 45px;
+            width: 100px;
+            bottom: -30px;
+            margin: 6px 8px 8px 8px;
+        }
+
+        .similar_product3>a>img {
+            position: absolute;
+            bottom: 16%;
+            left: 5px;
+            right: 0;
+            margin: 8px;
+            padding: 10px;
+            height: 200px;
+            width: 200px;
+        }
+
+        .similar_product3>p {
+            width: 200px;
+            position: absolute;
+            padding: 0;
+            text-align: center;
+            margin: 10px 12px 0 12px;
+            right: 0;
+            left: 0px;
+            bottom: 60px;
+        }
+
+        .similar_product3>p>span {
+            left: 40px;
+            position: absolute;
+            width: 100px;
+            bottom: -45px;
+            margin: 6px 8px 8px 8px;
+        }
+
+        .similar_product4>a>img {
+            position: absolute;
+            bottom: 16%;
+            margin: 8px;
+            right: 0;
+            left: 225px;
+            padding: 10px;
+            height: 200px;
+            width: 200px;
+        }
+
+        .similar_product4>p {
+            width: 200px;
+            right: 0;
+            position: absolute;
+            left: 230px;
+            bottom: 7%;
+            margin: 0;
+            padding: 0 12px 10px 12px;
+        }
+
+        .similar_product4>p>span {
+            position: absolute;
+            left: 40px;
+            width: 100px;
+            bottom: -28px;
+            margin: 4px 4px 5px 7px;
+        }
+    }
+
+    @media screen and (max-width:499px) {
+
+        /*商品圖片*/
+        .photo {
+            width: 90%;
+            height: auto;
+            clear: both;
+            margin: 80px 5% 0px 5%;
+        }
+
+        .photobig img {
+            margin: 25px 0 5px 18px;
+            width: 90%;
+        }
+
+        .photosmall {
+            margin: 0px 25px 20px 18px;
+        }
+
+        /*商品簡介*/
+        .product_text {
+            clear: both;
+            width: 85%;
+            margin: 5px 5% 0px 5%;
+        }
+
+        .product_text>h1 {
+            position: absolute;
+            top: 100px;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .subtitle {
+            font-size: 14px;
+        }
+
+        .product_text_price {
+            margin: 0;
+            padding: 0;
+            font-size: 24px;
+        }
+
+        .product_text>form {
+            clear: both;
+        }
+
+        .product_text_number {
+            clear: both;
+            padding: 20px 0 10px;
+            font-size: 16px;
+        }
+
+        .product_text_number>input {
+            padding: 3px;
+        }
+
+        .stock {
+            font-size: 14px;
+            padding: 25px 0 0 5px;
+        }
+
+        .product_text_buy {
+            margin: 0;
+            padding: 20px 0 30px 0;
+            float: right;
+        }
+
+        .product_text_buy>input {
+            font-size: 16px;
+            padding: 5px 30px;
+        }
+
+        .product_text_detail {
+            clear: both;
+            padding-bottom: 1px;
+        }
+
+        .product_text_detail>p {
+            line-height: 30px;
+        }
+
+        /*星級&留言板*/
+        .feedback {
+            margin: 750px 5% 50px;
+            padding: 0;
+            clear: both;
+            width: 90%;
+        }
+
+        .feedback>h2 {
+            padding: 10px 0px 10px 15px;
+            margin-bottom: 0px;
+        }
+
+        .feedback>form {
+            padding: 0 0 15px 20px;
+        }
+
+        .feedback_name {
+            padding-top: 16px;
+        }
+
+        .feedback_name>input {
+            border: 2px solid #9f7855;
+            border-radius: 5px;
+            outline-style: none;
+            padding: 5px;
+        }
+
+        /*星星*/
+        .feedback_star {
+            clear: both;
+            margin: 6px 0 20px 0;
+            float: left;
+        }
+
+        .feedback_star_name {
+            padding-top: 4px;
+            height: 30px;
+            float: left;
+        }
+
+        .star {
+            width: 60%;
+            float: left;
+        }
+
+        /*留言*/
+        .feedback_message {
+            clear: both;
+        }
+
+        .feedback_message>textarea {
+            width: 90%;
+        }
+
+        .feedback>form>input {
+            padding: 5px;
+            width: 40%;
+            margin: 10px 25px 0 0;
+        }
+
+        /*同類商品*/
+        .similar_bless {
+            position: absolute;
+            bottom: -1170px;
+            padding-bottom: 15px;
+            margin: 40px 5% 40px 5%;
+            width: 90%;
+            height: 580px;
+            clear: both;
+        }
+
+        .similar {
+            position: absolute;
+            bottom: -1200px;
+            padding-bottom: 15px;
+            margin: 40px 5% 40px 5%;
+            width: 90%;
+            height: 580px;
+            clear: both;
+        }
+
+        .similar_product1,
+        .similar_bless_product2,
+        .similar_bless_product3,
+        .similar_product2,
+        .similar_product3,
+        .similar_product4 {
+            padding: 1%;
+        }
+
+        .similar_product1>a>img,
+        .similar_bless_product2>a>img,
+        .similar_product2>a>img {
+            margin: 5px;
+            padding: 10px;
+            height: 150px;
+            width: 150px;
+        }
+
+        .similar_bless_product3>a>img {
+            position: absolute;
+            bottom: 20%;
+            left: 0px;
+            padding: 10px;
+            height: 150px;
+            width: 150px;
+            margin: 5px;
+        }
+
+        .similar_product3>a>img {
+            position: absolute;
+            bottom: 20%;
+            left: 0px;
+            padding: 10px;
+            height: 150px;
+            width: 150px;
+        }
+
+        .similar_product4>a>img {
+            position: absolute;
+            bottom: 20%;
+            left: 170px;
+            padding: 10px;
+            height: 150px;
+            width: 150px;
+        }
+
+        .similar_product1>p,
+        .similar_bless_product2>p,
+        .similar_product2>p {
+            text-align: center;
+            margin: 0;
+            padding: 0 12px 10px 12px;
+        }
+
+        .similar_bless_product3>p {
+            width: 155px;
+            position: absolute;
+            bottom: 10%;
+            left: 0px;
+            margin: 0;
+            padding: 0 12px 10px 12px;
+        }
+
+        .similar_product3>p {
+            width: 160px;
+            position: absolute;
+            bottom: 10%;
+            left: 5px;
+            margin: 0;
+            padding: 0 12px 10px 12px;
+        }
+
+        .similar_product4>p {
+            width: 160px;
+            position: absolute;
+            left: 51%;
+            bottom: 10%;
+            margin: 0;
+            padding: 0 12px 10px 12px;
+        }
+
+        .similar_bless_product3>p>span {
+            left: 20px;
+            position: absolute;
+            width: 100px;
+            bottom: -30px;
+            margin: 6px 8px 8px 8px;
+        }
+
+        .similar_product3>p>span {
+            position: absolute;
+            left: 20px;
+            width: 100px;
+            bottom: -30px;
+            margin: 6px 8px 8px 8px;
+        }
+
+        .similar_product4>p>span {
+            position: absolute;
+            left: 20px;
+            width: 100px;
+            bottom: -28px;
+            margin: 4px 4px 5px 7px;
+        }
+    }

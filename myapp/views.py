@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from datetime import datetime
 from myapp.models import userdata
+from myapp.models import Product
 from myapp.models import QA
 from django.http import Http404
 from django.contrib import auth
@@ -42,10 +43,13 @@ def rank(request):
     rank = ranking_list.filter(POINT__gt=ranking_list.get(NAME=username).POINT).count() + 1
     return render(request,'leaderboard.html',locals())
 
-     
+def product(request):
+    return render(request, 'product_01.html')
+
 
 #def rerank(request):
-
+def point(request):
+    return render(request, 'pointsmall.html')
 
     
     
@@ -102,3 +106,8 @@ def receip(request):
 
 
 
+
+
+def product(request):
+    nname=Product.objects.get(id=1)
+    return render(request, 'product_01.html',locals())

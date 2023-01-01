@@ -28,12 +28,14 @@ urlpatterns = [
     #path('hi/<username>/', views.hiname),      # 傳遞字串參數 username
     path('login/index',views.home),
     path('login/signin', views.signin),
-    path('123',views.QAQ),
+    path('123/',views.QAQ),
     path('QAW/',views.QAw),
     path('rank',views.rank),
     path('receip/',views.receip),
-
-
+    path('product_01/',views.product),
+    path('pointsmall/',views.point),
+    #path('product_01/',views.productall),
+    #path('signin/productall/',views.productall),
     #path('hi/<username>/', views.hinampath('myweb/', include('myweb.urls'))e),      # 傳遞字串參數 username
     #path('age/<int:year>/', views.age),        # 傳遞數值參數 year
     #path('hello/', views.hello_view),
