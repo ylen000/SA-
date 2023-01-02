@@ -19,3 +19,24 @@ class QA(models.Model):
 class memberlevel(models.Model):
         IMAGE = models.ImageField(upload_to="../static/images",blank=False, null=False)
         IMAGE_NUMBER = models.CharField('等級',max_length=32)
+
+
+
+#import datetime
+#now = datetime.datetime.now()
+# 創建一個Product的實例，並將當時的日期存入 date 字段
+
+
+from django.db import models
+from django.utils import timezone
+class Product(models.Model):
+        
+    name = models.CharField(max_length=255)
+    point = models.CharField(max_length=500)
+    quantity = models.PositiveIntegerField()
+    intro = models.CharField(max_length=600)
+    total = models.CharField(max_length=20, null=False)
+    date = models.DateTimeField(default = timezone.now)
+
+
+

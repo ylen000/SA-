@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ERROR</title>
+    <title>碳制郎</title>
+    <link rel="stylesheet" href="../static/css/receip.css">
 </head>
-
-<link rel="stylesheet" href="../static/css/signin.css">
-<body style="background-image: url(../static/images/earth2.jpg);">
+<style>
     
+</style>
+<body style="background-image: url(../static/images/earth2.jpg);">
     <header class="heading">
         <div>
             <a href="http://127.0.0.1:8000/login/index"><img class="previous" src="../static/images/home-icon-silhouette.png"></a>
@@ -18,23 +19,19 @@
             <a class="mem" href="http://127.0.0.1:8000/member">會員中心</a>
         </div>
     </header>
-    
     <article>
-       
-        
-        
-            <div style="padding: 5%; text-align:center;" class="signtit1">
-                
-                <p>{{wrong}}</p>
-                <a href="{{a}}">返回{{back}}</a>
-                
+        <div class="body">
+            <div class="body2">
+                <div class="userphoto" id="">
+                    <img width="20%" src="../static/images/user.png">
+                </div>
+                <p>{{name}}</p>
+                <p>歡迎使用碳制郎</p><br>
+                <a href="http://127.0.0.1:8000/signout">登出</a>
             </div>
             
-        
+        </div>
     </article>
-    
-    
-
     <div class="problem">
         <a href="http://127.0.0.1:8000/123"><img style="width: 100%;" src="../static/images/customer-service.png"></a>
     </div>
