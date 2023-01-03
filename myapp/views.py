@@ -114,7 +114,6 @@ def receip(request):
 
 def product(request):
     nname=Product.objects.get(id=2)
-
     return render(request, 'product_01.html',locals())
 
 
