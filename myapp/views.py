@@ -13,7 +13,13 @@ from django.db.models import Max
 # Create your views here.
 
 def signin(request):
-    return render(request, 'signin.html')
+    username=request.session.get('username')
+    if username is not None:
+        user=userdata.objects.get(NAME=username)
+        name=str(user.NAME)
+        return render(request, 'usersignin.html',locals())
+    else:
+        return render(request, 'signin.html')
 def signup(request):
     return render(request, 'signup.html')
 def login(request):
@@ -33,7 +39,9 @@ def login(request):
     except userdata.DoesNotExist:
             wrong="尚未註冊"
             return render(request,'passwordwrong.html',locals())
-
+def signout(request):
+    request.session.clear()
+    return render(request, 'signin.html')
 def home(request):
     username=request.session.get('username')
     return render(request,'index.html',locals())
@@ -104,10 +112,7 @@ def receip(request):
 
 
 
-
-
-
-
 def product(request):
     nname=Product.objects.get(id=1)
+
     return render(request, 'product_01.html',locals())

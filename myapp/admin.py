@@ -17,7 +17,7 @@ class QAAdmin(admin.ModelAdmin):
     list_display=('id','QUESTIONS','USERNAME')
 admin.site.register(QA,QAAdmin)
 
-#QA問題回報表
+#PRODUCT
 from myapp.models import Product
 class productAdmin(admin.ModelAdmin):
     list_display=('id','name','point','quantity','intro','total','date')
