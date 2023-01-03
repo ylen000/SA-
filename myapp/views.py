@@ -116,6 +116,8 @@ def product(request):
     nname=Product.objects.get(id=2)
     return render(request, 'product_01.html',locals())
 
+
+#單一商品成功兌換跳轉function
 def change(request):
     username=request.session.get('username')
     num=request.POST.get('num')
@@ -125,3 +127,8 @@ def change(request):
 
 def grade(request):
     return render(request, 'grade.html')
+
+
+from django.shortcuts import HttpResponseRedirect
+from django.urls import reverse
+

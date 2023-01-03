@@ -151,3 +151,6 @@ function myFunction172() {
   function showSuccessMessage() {
     alert("成功兌換！");
   }
+  function goBack() {
+    history.back();
+  }

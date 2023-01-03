@@ -37,6 +37,7 @@ urlpatterns = [
     path('signout',views.signout),
     path('grade',views.grade),
     path('exchange/',views.change),
+    
     #path('product_01/',views.productall),
     #path('signin/productall/',views.productall),
     #path('hi/<username>/', views.hinampath('myweb/', include('myweb.urls'))e),      # 傳遞字串參數 username
