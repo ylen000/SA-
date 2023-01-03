@@ -10,6 +10,8 @@ from django.db.models import F, Func, Value
 from django.db.models import Max
 from django.shortcuts import HttpResponseRedirect
 from django.urls import reverse
+from myapp.models import userbuy
+from datetime import date
 
 # Create your views here.
 
@@ -130,13 +132,22 @@ def reducepoint(request):
     username=request.session.get('username')
     userpoint=userdata.objects.get(NAME=username)
     total=request.GET.get('total')
+    product=request.GET.get('product')
     l=int(userpoint.POINT)-int(total)
     userpoint.POINT=l
     userpoint.save()
+    record = userbuy(USERNAME=username,PNAME=product,EX=total,LEFT=l,DATE=date.today())
+    record.save()
     return render(request, 'buysuccess.html',locals())
 def grade(request):
     return render(request, 'grade.html')
-
-
-
+def memberlook(request):
+    username=request.session.get('username')
+    try:
+        userbuys = userbuy.objects.filter(USERNAME=username)
+    except userbuy.DoesNotExist:
+        raise Http404("查無學生資料")
+    except:
+        raise Http404("讀取錯誤")
+    return render(request, 'memberlook1.html',locals())
 

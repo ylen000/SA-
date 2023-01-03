@@ -38,5 +38,13 @@ class Product(models.Model):
     total = models.CharField(max_length=20, null=False)
     date = models.DateTimeField(default = timezone.now)
 
+class userbuy(models.Model):
+     DATE = models.DateTimeField('日期',default = timezone.now)
+     USERNAME=models.CharField('使用者名稱',max_length=20,blank=True )
+     PNAME=models.CharField('商品名稱',max_length=255)
+     REVENUE=models.CharField('收入',max_length=255)
+     EX=models.CharField('支出',max_length=255)
+     LEFT=models.CharField('剩餘點數',max_length=255)
+
 
 
