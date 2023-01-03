@@ -116,7 +116,12 @@ def product(request):
     nname=Product.objects.get(id=2)
     return render(request, 'product_01.html',locals())
 
-
+def change(request):
+    username=request.session.get('username')
+    num=request.POST.get('num')
+    proname=request.POST.get('product')
+    print(num,proname)
+    return HttpResponse("success")
 
 def grade(request):
     return render(request, 'grade.html')
