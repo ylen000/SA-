@@ -116,3 +116,8 @@ def product(request):
     nname=Product.objects.get(id=2)
 
     return render(request, 'product_01.html',locals())
+
+
+
+def grade(request):
+    return render(request, 'grade.html')
