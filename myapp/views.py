@@ -8,7 +8,8 @@ from django.http import Http404
 from django.contrib import auth
 from django.db.models import F, Func, Value
 from django.db.models import Max
-
+from django.shortcuts import HttpResponseRedirect
+from django.urls import reverse
 
 # Create your views here.
 
@@ -135,3 +136,7 @@ def reducepoint(request):
     return render(request, 'buysuccess.html',locals())
 def grade(request):
     return render(request, 'grade.html')
+
+
+
+

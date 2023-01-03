@@ -143,3 +143,14 @@ function myFunction172() {
     x = document.getElementById("big_photo");
     x.innerHTML = "<img src='../assets/imsges/produce_tool2.png'>";
 }
+
+
+
+
+
+  function showSuccessMessage() {
+    alert("成功兌換！");
+  }
+  function goBack() {
+    history.back();
+  }
