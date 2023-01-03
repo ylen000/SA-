@@ -32,7 +32,7 @@ from django.utils import timezone
 class Product(models.Model):
         
     name = models.CharField(max_length=255)
-    point = models.CharField(max_length=500)
+    point = models.IntegerField(max_length=500)
     quantity = models.PositiveIntegerField()
     intro = models.CharField(max_length=600)
     total = models.CharField(max_length=20, null=False)

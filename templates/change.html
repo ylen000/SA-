@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>碳制郎</title>
+    <link rel="stylesheet" href="../static/css/receip.css">
+</head>
+<style>
+    
+</style>
+<body style="background-image: url(../static/images/earth2.jpg);">
+    <header class="heading">
+        <div>
+            <a href="http://127.0.0.1:8000/login/index"><img class="previous" src="../static/images/home-icon-silhouette.png"></a>
+        </div>
+        <div>
+            <a class="mem" href="http://127.0.0.1:8000/member">會員中心</a>
+        </div>
+    </header>
+    <article>
+        <div class="body" style="text-align:left;">
+            <div class="body2" style="padding:5%">   
+                <div class="body2" style="padding:20%">   
+                    <p style="font-size:13pt">兌換商品:{{proname}}</p><br>
+                    <hr>
+                    <p style="font-size:13pt">數量:{{num}}</p>
+                    <p style="font-size:13pt">花費點數:{{total}}</p>
+                    <p style="font-size:13pt">您的點數:{{userpoint.POINT}}</p>
+                    <hr>
+                    <p style="color:red;">注意!!將會從您的點數中扣除{{total}}點!!</p>
+                    <p style="font-size:13pt">是否仍要兌換此商品?</p><br><br>
+                    <form action="/reduce/" method="get">
+                        <input type='hidden' name="total" value="{{total}}">
+                        <input style='font-weight:bold;color:white;border:solid,black;background-color:black;padding:2%;border-radius:3px;margin:5%;height:50px' type="submit" value="兌換"> 
+                        
+                    </form>
+                    <br>
+                    <buttom style='padding:5%;border-radius:3px;margin:5%'>
+                        <a style="color:black;" href="http://127.0.0.1:8000/login/index">< 還是算了</a>
+                    </buttom> 
+                </div>   
+            </div>     
+           
+        </div>
+    </article>
+    <div class="problem">
+        <a href="http://127.0.0.1:8000/123"><img style="width: 100%;" src="../static/images/customer-service.png"></a>
+    </div>
+</body>
+</html>

@@ -116,7 +116,22 @@ def product(request):
     nname=Product.objects.get(id=2)
     return render(request, 'product_01.html',locals())
 
+def change(request):
+    username=request.session.get('username')
+    num=request.GET.get('num')
+    proname=str(request.GET.get('product'))
+    product=Product.objects.get(name=proname)
+    Point=product.point
+    total=int(num)*Point
+    return render(request, 'change.html',locals())
 
-
+def reducepoint(request):
+    username=request.session.get('username')
+    userpoint=userdata.objects.get(NAME=username)
+    total=request.GET.get('total')
+    l=int(userpoint.POINT)-int(total)
+    userpoint.POINT=l
+    userpoint.save()
+    return render(request, 'buysuccess.html',locals())
 def grade(request):
     return render(request, 'grade.html')

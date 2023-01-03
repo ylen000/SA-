@@ -28,50 +28,48 @@
             </div>
         </header>
         <main>
+            
             <article>
                 <!--圖片-->
                 <section class="photo">
                     <div class="photobig" id="big_photo">
-                        <img src="../static/images/produce_love.png">
+                        <img src="../static/images/msld2.jpg">
                     </div>
                     <div class="photosmall">
                         <a herf onclick="myFunction01()">
-                            <img src="../static/images/produce_love.png">
+                            <img src="../static/images/msld2.jpg">
                         </a>
                     </div>
                 </section>
                 
+                {% csrf_token %}
+                {{form}}
                 
-                <!--商品名稱價錢--><form class="product_01">
-                    {% csrf_token %}
-                   
-                    {{ form.as_p }}
-                <article class="product_text">
-                    <h1 style="font-size: 40px;">{{nname.name}}</h1>
-                    <div class="product_text_price"><img src="../static/images/money.png" width="50px" style="padding-right: 20px;">{{nname.point}}點</div>
-                    
-                    
-                  
+                <form class="product_01" action="/exchange/" method='get'>
+                
+                    <article class="product_text">
+                        
+                        <h1 style="font-size: 40px;">{{nname.name}}</h1>
+                        
+                        <div class="product_text_price"><img src="../static/images/money.png" width="50px" style="padding-right: 20px;">{{nname.point}}點</div>
+                                    
+                            <div class="product_text_number">數量：<input type="number" name="num" min="1" value="1"></div>
+                            <div class="product_text_buy"><input type="submit" value="兌換"></div>
+                            <input type="hidden" name="product" value="{{nname.name}}">
+                            
 
 
-                        <div class="product_text_number" input type=number id="quantity">數量：<input type="number" min="1" value="1"></div>
-                        <div class="product_text_buy"><input type="submit" value="兌換">
-                        
-                        
+                        </form>
+                        <div class="product_text_detail">
+                            <h3>商品介紹</h3>
+                            <hr>
+                            {{nname.intro}}
+                            <!--<h3>章頭尺寸：直徑2.5公分</h3>
+                            <h3>章頭高度：1.5公分</h3>
+                            <h3>章頭重量：約30公克</h3>
+                            <h3>木柄高度：7.4公分</h3>-->
                         </div>
-
-
-                    </form>
-                    <div class="product_text_detail">
-                        <h3>商品介紹</h3>
-                        <hr>
-                        {{nname.intro}}
-                        <!--<h3>章頭尺寸：直徑2.5公分</h3>
-                        <h3>章頭高度：1.5公分</h3>
-                        <h3>章頭重量：約30公克</h3>
-                        <h3>木柄高度：7.4公分</h3>-->
-                    </div>
-                   
+                
                 </article>
             </article>
             <div class="problem">
