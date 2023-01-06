@@ -9,8 +9,7 @@ class userdata(models.Model):
         NICKNAME = models.CharField('暱稱',max_length=20,blank=True)
         POINT = models.IntegerField('點數',blank=True,default=0)
         IDCARD = models.CharField('身分證字號',max_length=10,blank=True)
-        
-
+        user_image = models.ImageField(upload_to='./static/images/',default='./static/images/amphibian.png')
 
 
 class QA(models.Model):
@@ -18,7 +17,7 @@ class QA(models.Model):
         QUESTIONS = models.CharField('問題回報',max_length=500,blank=True)
 class memberlevel(models.Model):
         IMAGE = models.ImageField(upload_to="../static/images",blank=False, null=False)
-        IMAGE_NUMBER = models.CharField('等級',max_length=32)
+        IMAGE_NUMBER = models.CharField('等級',max_length=32,default='1')
 
 
 

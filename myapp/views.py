@@ -12,9 +12,13 @@ from django.shortcuts import HttpResponseRedirect
 from django.urls import reverse
 from myapp.models import userbuy
 from datetime import date
+from django.urls import path
+#from myapp import flask_app
 
 # Create your views here.
-
+#urlpatterns=[
+# path('/flask',flask_app.home)
+# ]
 def signin(request):
     username=request.session.get('username')
     if username is not None:
@@ -25,6 +29,29 @@ def signin(request):
         return render(request, 'signin.html')
 def signup(request):
     return render(request, 'signup.html')
+def register(request):
+    uName =request.POST.get('username')
+    uPhone =request.POST.get('phone')
+    uPassword =request.POST.get('password')
+    if uName =="":
+        wrong="有欄位空白"
+        a="http://127.0.0.1:8000/register"
+        back="註冊頁面"
+        return render(request,'QAsuccess.html',locals())
+    if uPhone =="":
+        wrong="有欄位空白"
+        a="http://127.0.0.1:8000/register"
+        back="註冊頁面"
+        return render(request,'QAsuccess.html',locals())
+    if uPassword =="":
+        wrong="有欄位空白"
+        a="http://127.0.0.1:8000/register"
+        back="註冊頁面"
+        return render(request,'QAsuccess.html',locals())
+    else:
+        rg = userdata(NAME=uName,PHONE=uPhone,PASSWORD=uPassword)
+        rg.save()
+        return render(request, 'signin.html',locals())
 def login(request):
     uName = request.POST.get('uName')
     uPass = request.POST.get('psw')
@@ -61,10 +88,7 @@ def product(request):
 #def rerank(request):
 def point(request):
     return render(request, 'pointsmall.html')
-
-    
-    
-            
+           
 
 
 def QAQ (request):
@@ -90,6 +114,7 @@ def QAw(request):
 def member(request):
           username=request.session.get('username')
           user=userdata.objects.get(NAME=username)
+          img=str(user.user_image)
           userphone=str(user.PHONE)
           name=str(user.NAME)
           name=str(user.NAME)
@@ -100,10 +125,19 @@ def member(request):
           #mylevel= str(request.GET.get('IMAGE_NUMBER'))
           point=str(user.POINT)
           point1=int(user.POINT)
-          if 10000000<=point1:
-              level=0
-          elif 15000<=point1<1000000:
-              level=1
+          if point1>=15000:
+            levels=1
+          elif 14999<=point1<9000:
+            levels=2
+          elif 8999<=point1<6000:
+            levels=3
+          elif 5999<=point1<3000:
+            levels=4
+          elif 2999<=point1<1000:
+            levels=5
+          else:
+            levels=6
+         
           return render(request,'member.html',locals())
 
 def receip(request):
@@ -111,6 +145,7 @@ def receip(request):
     user=userdata.objects.get(NAME=username)
     name=str(user.NAME)
     point=str(user.POINT)
+    img=str(user.user_image)
     return render(request,'receip.html',locals())
 
 
@@ -146,8 +181,59 @@ def memberlook(request):
     try:
         userbuys = userbuy.objects.filter(USERNAME=username)
     except userbuy.DoesNotExist:
-        raise Http404("查無學生資料")
+        raise Http404("查無資料")
     except:
         raise Http404("讀取錯誤")
     return render(request, 'memberlook1.html',locals())
+    
+def add(request):
+    # =====新增的程式碼=====#
+    username=request.session.get('username')
+    user=userdata.objects.get(NAME=username)
+    img=str(user.user_image)
+    userphone=str(user.PHONE)
+    name=str(user.NAME)
+    point1=int(user.POINT)
+    levels=1
+    if point1>=1000000:
+        levels=0
+    elif 15000<=point1<1000000:
+        levels=1
+    else:
+        level="--"
+    if request.method == "POST":
+        user_img = request.FILES.get('user_image')
+        phone = request.POST.get('phone')
+        aname = request.POST.get('myname')
+        user=userdata.objects.get(NAME=username)
+        user.user_image = user_img
+        user.save()
+        img=user.user_image
+    return render(request, 'member.html', locals())
+def res(request):
+    return render(request,'memberedit.html')
+def re(request):
+    # =====新增的程式碼=====#
+        username=request.session.get('username')
+        user=userdata.objects.get(NAME=username)
+        img=str(user.user_image)
+        userphone=str(user.PHONE)
+        name=str(user.NAME)
+        point1=int(user.POINT)
+        levels=1
+        if point1>=1000000:
+            levels=0
+        elif 15000<=point1<1000000:
+            levels=1
+        else:
+            level="--"
+        if request.method == "POST":
+            phone = request.POST.get('phone')
+            aname = request.POST.get('myname')
+            user=userdata.objects.get(NAME=username)
+            user.NAME = aname
+            user.PHONE=phone
+            user.save()
+        return render(request, 'member.html', locals())
+
 

@@ -4,7 +4,16 @@
     margin: 74px 25% 0 25%;
     
 }
-
+.userphoto img{
+    border: solid black;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    margin-right: 4%;
+    background-color: rgba(246, 246, 246, 0.795);
+    padding: 0.5%;
+    float: left;
+}
 .order>h2,
 .signin>h2 {
     font-size: 32px;
@@ -51,7 +60,7 @@
 }
 
 .form {
-    height: 380px;
+   
     padding: 20px 50px;
     background-color: #FFFFFF;
     border-radius: 10px;
@@ -71,10 +80,12 @@
 
 .signin_form {
     margin-bottom: 80px;
+    
 }
 
 .signin_form_address {
     clear: both;
+    
 }
 
 .signin_form_text {
@@ -284,7 +295,7 @@ h5 {
     }
 
     .form {
-        height: auto;
+        
         padding: 20px 30px 20px;
     }
 
@@ -399,7 +410,7 @@ h5 {
     }
 
     .form {
-        height: auto;
+        
         padding: 20px 30px 120px;
     }
 
@@ -517,9 +528,7 @@ h5 {
     }
 
 
-    .form {
-        height: 360px;
-    }
+   
 
 
     .right {

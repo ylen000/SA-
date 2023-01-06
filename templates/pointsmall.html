@@ -52,16 +52,20 @@
         
     </article>
     <table style="margin-left: 10%;" class="product">
+      {% for pros in pro %}
+      <form action="/product_01/" method="get">
+        {% csrf_token %}
       <tr>
         <td>
-          <a href="http://127.0.0.1:8000/product_01" style="text-decoration: none;"><ski><span><img class="hotproimg" src="../static/images/msld.jpg" >
-          <h3 class="tdp" style="margin-top: 30px;">瑪莎拉蒂</span></ski></h3></a>
-        </td>
-        <td>
-          <a href="" style="text-decoration: none;"><ski><span><img class="hotproimg" src="../static/images/msld.jpg" >
-          <h3 class="tdp" style="margin-top: 30px;">瑪莎拉蒂</span></ski></h3></a>
-        </td>
+          <ski><span><img class="hotproimg" src="../static/images/msldlogo.png" >
+          <h3 class="tdp" style="margin-top: 30px;">{{pros.name}}</span></ski></h3></a>
+          <input name="product" type="hidden" value="{{pros.name}}">
+          <input type="submit" value="兌換">
+        </td>        
       </tr>
+      </form>
+      {% endfor %}
+      
         
     </table>
     <div class="problem">

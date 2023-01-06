@@ -4,18 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>碳制郎-註冊</title>
+    <title>炭制郎-註冊</title>
 </head>
 <link rel="stylesheet" href="../static/css/signup.css">
 <body style="background-image: url(../static/images/earth2.jpg);">
-    <header class="heading">
-        <div>
-            <a href="http://127.0.0.1:8000/login/index"><img class="previous" src="../static/images/home-icon-silhouette.png"></a>
-        </div>
-        <div>
-            <a class="mem" href="http://127.0.0.1:8000/member">會員中心</a>
-        </div>
-    </header>
+    
     <article>
         <div class="signtit1">
             <p>WELCOME</p>
@@ -25,7 +18,8 @@
         </div>
         <div class="signinbody">
             <div class="signbg">
-                <form id="signin" action="">
+                <form id="signin" action="/register/" method="post">
+                    {% csrf_token %}
                     <div class="sign">
                         <br>
                         使用者名稱:<br>&nbsp;<input name="username"><br><br><br>
@@ -41,8 +35,6 @@
             
         </div>
     </article>
-    <div class="problem">
-        <a href="http://127.0.0.1:8000/123"><img style="width: 100%;" src="../static/images/customer-service.png"></a>
-    </div>
+   
 </body>
 </html>

@@ -38,7 +38,12 @@ urlpatterns = [
     path('grade',views.grade),
     path('exchange/',views.change),
     path('reduce/',views.reducepoint),
-    path('memberlook',views.memberlook),
+    path('member/memberlook01',views.memberlook),
+    path('add/',views.add),
+    path('re/',views.re),
+    path('res/',views.res),
+    path('register/',views.register),
+    path('333',views.register),
     #path('product_01/',views.productall),
     #path('signin/productall/',views.productall),
     #path('hi/<username>/', views.hinampath('myweb/', include('myweb.urls'))e),      # 傳遞字串參數 username

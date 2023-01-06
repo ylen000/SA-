@@ -24,51 +24,36 @@
             <section class="signin" style="padding-bottom:10%">
                 <h2>會員資料</h2>
                 <hr>
-                <form class="form" action="/add/" enctype="multipart/form-data" method="post">
+                
+                <form class="form" action="/re/" enctype="multipart/form-data" method="post">
                     {% csrf_token %}
-                    <div class="signin_form">
-                        <div class="userphoto" id="">
-                            <img width="20%" src="../{{img}}">
-                            <input style="margin:5%" type="file" name="user_image">
-                            <input style="margin:2%;width:20%;color:white;border:solid,black;background-color:black;padding:1%;border-radius:3px;" type="submit" value="修改頭貼">
-                        </div><br><br>
-                    </div>
-                
-            
                     <div class="left">
-                        <div class="signin_form_address">
+                        <div class="signin_form">
                             <div class="signin_form_text">
-                                <p>會員帳號： {{userphone}}</p><br>
+                                會員帳號： 
                             </div>
+                            <input type="tel" name="phone" value="{{ userphone }}" required><br>
                         </div>
-                        <div class="signin_form_address">
+                        <div class="signin_form">
                             <div class="signin_form_text">
-                               <p> 會員名稱： {{name}}</p><br>
+                                會員名稱： 
+
+
                             </div>
+                            <input type="text" name="myname" value="{{name}}" required><br>
                         </div>
                 
-                        <div class="signin_form_address">
-                            <div class="signin_form_text">
-                                <p>等級：{{levels}}</p><br>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="signin_form_address">
-                        <div class="signin_form_text">
-                            <p>點數：{{point1}}</p><br>
-                        </div>
-                    </div>
+                        
                     <div class="signin_form_address">
                         
-                        <buttom style="Text-decoration:none;width:20%;border:solid,black;background-color:black;padding:3%;border-radius:3px;">
-                            <a style="Text-decoration:none;color:white;" href="/res/">修改資料</a>
-                        </buttom>
+                        <input style="width:20%;color:white;border:solid,black;background-color:black;padding:3%;border-radius:3px;" type="submit" value="修改資料">
                         
                     </div>
                 </form>
+                
             </section>
             <section class="order">
-                <h3><a href="memberlook01">碳權存摺</a></h3>
+                <h3><a href="memberlook1.html">碳權存摺</a></h3>
             </section>
             <script src="../static/js/common.js"></script>
             <div class="problem">
